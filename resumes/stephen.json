@@ -1,0 +1,141 @@
+{
+    "name": "Stephen Poserina",
+    "location": "Philadelphia, PA, US",
+    "phone": "512-861-1468",
+    "email": "work.stephen.poserina@outlook.com",
+    "summary": "Strategic and innovative Senior Full Stack Engineer with 17+ years of experience designing and deploying enterprise-grade applications using Node.js, NestJS, and Python (FastAPI, Django). Adept at integrating AI/ML models, cloud-native microservices, and CI/CD automation pipelines that drive measurable business outcomes. Skilled in leading Agile, cross-functional teams, optimizing performance across distributed architectures, and delivering resilient, scalable, and secure digital ecosystems. Combines technical depth with a product-driven mindset to bridge backend intelligence with cutting-edge frontend experiences using React, Next.js, Angular, and Vue.",
+    "skills": {
+      "backend": [
+        "Node.js",
+        "NestJS",
+        "Express.js",
+        "Python (FastAPI, Django, Flask)",
+        "C#",
+        "PHP",
+        "Go"
+      ],
+      "frontend": [
+        "React.js",
+        "Angular",
+        "Vue.js",
+        "Next.js",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "TailwindCSS"
+      ],
+      "ai_ml": [
+        "TensorFlow",
+        "scikit-learn",
+        "PyTorch",
+        "OpenAI API",
+        "Pandas",
+        "NumPy",
+        "spaCy"
+      ],
+      "cloud_devops": [
+        "AWS (ECS, Lambda, S3, RDS, CloudFormation)",
+        "GCP",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "GitHub Actions",
+        "CI/CD"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "MongoDB",
+        "MySQL",
+        "Redis",
+        "DynamoDB",
+        "Elasticsearch",
+        "Firebase"
+      ],
+      "automation_testing": [
+        "PyTest",
+        "Jest",
+        "Mocha",
+        "Selenium",
+        "Postman",
+        "Newman",
+        "Airflow",
+        "Ansible"
+      ],
+      "tools_methodologies": [
+        "Git",
+        "Agile/Scrum",
+        "REST",
+        "GraphQL",
+        "WebSockets",
+        "Microservices",
+        "Event-Driven Architecture"
+      ],
+      "monitoring_observability": [
+        "Prometheus",
+        "Grafana",
+        "ELK Stack",
+        "New Relic"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Senior Software Engineer",
+        "company": "Thinaer",
+        "start_date": "Feb 2021",
+        "end_date": "Sep 2025",
+        "details": [
+          "Architected and developed microservices using Node.js and NestJS, integrating event-driven workflows via RabbitMQ and gRPC, achieving 40% faster inter-service communication and improving overall scalability.",
+          "Integrated AI-based analytics pipelines using Python (FastAPI, scikit-learn, TensorFlow) to predict IoT sensor anomalies, reducing false-positive alerts by 38%.",
+          "Migrated core infrastructure to AWS (ECS, Lambda, S3, RDS, CloudFormation), improving deployment speed by 55% and enabling full Infrastructure-as-Code automation.",
+          "Spearheaded the adoption of CI/CD pipelines with GitHub Actions and Docker, achieving 95% deployment reliability and reducing manual deployment time by 70%.",
+          "Led a cross-functional Agile team of 7 developers, conducting sprint planning, code reviews, and architectural reviews, improving delivery velocity by 25%.",
+          "Engineered real-time dashboards using React and Next.js, connected to WebSocket APIs for dynamic IoT data visualization with <200ms latency.",
+          "Designed automated monitoring using Prometheus and Grafana, improving system uptime to 99.98% and establishing predictive alerting for key infrastructure metrics.",
+          "Collaborated with data science teams to operationalize ML models through RESTful and GraphQL APIs, ensuring seamless integration with frontend clients and external partner systems."
+        ]
+      },
+      {
+        "title": "Senior Software Engineer",
+        "company": "Channel Logistics",
+        "start_date": "Oct 2015",
+        "end_date": "Feb 2021",
+        "details": [
+          "Built a distributed logistics management platform leveraging Node.js (Express, NestJS) and Python microservices, processing millions of shipment events daily with high throughput and fault tolerance.",
+          "Implemented predictive analytics models for route optimization using Python (Pandas, NumPy, TensorFlow), cutting average delivery delays by 24%.",
+          "Modernized legacy PHP and .NET components into containerized Node-based microservices deployed on AWS ECS and orchestrated through Terraform.",
+          "Developed a React.js and Angular hybrid frontend, integrating WebSocket-based notifications for real-time shipment tracking and ETA updates.",
+          "Automated system integration testing using PyTest, Jest, and Postman, reducing QA time by 45% and improving release stability across microservice boundaries.",
+          "Optimized SQL and NoSQL (MongoDB, PostgreSQL) queries, improving report generation and analytics API performance by 60%.",
+          "Created CI/CD workflows with Jenkins and Docker, enforcing automated linting, testing, and versioned releases.",
+          "Mentored junior engineers in Agile and DevOps best practices, ensuring consistent code quality and technical excellence across teams."
+        ]
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Google",
+        "start_date": "Sep 2008",
+        "end_date": "Sep 2015",
+        "details": [
+          "Designed scalable backend services using Python (Django, Flask) and early Node.js, supporting millions of user sessions across Google internal analytics tools.",
+          "Contributed to the migration of legacy Java and Python systems into containerized Node-based APIs, pioneering hybrid service patterns before Kubernetes adoption.",
+          "Enhanced data processing pipelines with BigQuery, Dataflow, and Pub/Sub, reducing ETL execution time from hours to minutes.",
+          "Developed an internal AngularJS-based frontend (2012+) for visualizing performance metrics, allowing real-time insights for engineering and product teams.",
+          "Collaborated with AI research teams to integrate machine learning models (TensorFlow prototype, 2013) into production-grade REST APIs for user behavior analysis.",
+          "Drove automation initiatives that replaced 70% of manual data collection through Python scripting and scheduled Airflow DAGs.",
+          "Actively participated in Agile sprint ceremonies and architecture design reviews, influencing long-term technical roadmaps across data-driven applications.",
+          "Supported code reviews, refactoring, and API standardization across backend services, improving maintainability and scalability for cross-team integrations."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor’s in Computer Science",
+        "school": "University of Pittsburgh",
+        "start_year": 2002,
+        "end_year": 2007
+      }
+    ]
+  }
+  
