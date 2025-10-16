@@ -27,7 +27,7 @@ export default function Home() {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `${selected}_${company || "Company"}_${role || "Role"}.pdf`;
+    a.download = `${selected}${company ? `_${company}` : ''}${role ? `_${role}` : ''}.pdf`;
     a.click();
     window.URL.revokeObjectURL(url);
   };
@@ -64,7 +64,7 @@ export default function Home() {
       </div>
 
       <div style={{ margin: "20px 0" }}>
-        <label style={{ fontWeight: "bold" }}>Company:</label>
+        <label style={{ fontWeight: "bold" }}>Company (Optional):</label>
         <input
           value={company}
           onChange={e => setCompany(e.target.value)}
@@ -81,7 +81,7 @@ export default function Home() {
       </div>
 
       <div style={{ margin: "20px 0" }}>
-        <label style={{ fontWeight: "bold" }}>Role:</label>
+        <label style={{ fontWeight: "bold" }}>Role (Optional):</label>
         <input
           value={role}
           onChange={e => setRole(e.target.value)}

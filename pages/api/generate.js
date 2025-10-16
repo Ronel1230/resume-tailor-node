@@ -91,9 +91,9 @@ Job Description: ${jd}
     aiText = aiText.replace(/```json|```/g, "").trim();
     const tailoredResume = robustJsonParse(aiText);
 
-    // Compile HTML with Handlebars
+    // Compile HTML with Handlebars - use template that matches resume name
     const templateHtml = fs.readFileSync(
-      path.join(process.cwd(), "templates", "base.html"),
+      path.join(process.cwd(), "templates", `${selected}.html`),
       "utf-8"
     );
     const template = Handlebars.compile(templateHtml);
@@ -106,12 +106,6 @@ Job Description: ${jd}
     const pdfBuffer = await page.pdf({
       format: "A4",
       printBackground: true,
-      margin: {
-        top: "20mm",
-        bottom: "20mm",
-        left: "15mm",
-        right: "15mm"
-      }
     });
     await browser.close();
 
