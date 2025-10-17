@@ -73,7 +73,6 @@
       font-size: 12px;
       color: var(--muted);
       border: 1px solid #eee;
-      margin-top: 7px;
     }
 
     .edu-list {
@@ -228,11 +227,13 @@
       <div style="margin-top:14px;font-size:13px;font-weight:700;color:var(--accent)">Technical Skills</div>
       <div class="skills-grid">
         {{#each skills}}
-        <div style="width:100%;margin-top:8px;">
+        <div style="margin-top:8px;">
           <div style="font-size:12px;font-weight:700;color:var(--muted)">{{formatKey @key}}</div>
-          {{#each this}}
-          <span class="chip">{{this}}</span>
-          {{/each}}
+          <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:4px;">
+            {{#each this}}
+            <span class="chip">{{this}}</span>
+            {{/each}}
+          </div>
         </div>
         {{/each}}
       </div>
