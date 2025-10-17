@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/generate.js": {
+    "api/generate/index.js": {
       "memory": 2048
     }
   }
