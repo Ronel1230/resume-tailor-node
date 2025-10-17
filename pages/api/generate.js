@@ -111,14 +111,13 @@ Job Description: ${jd}
       const chromium = chromiumModule.default || chromiumModule;
 
       // Destructure correctly
-      const { executablePath, args, headless: chromiumHeadless, defaultViewport } = chromium;
+      const { executablePath, args, headless: chromiumHeadless } = chromium;
 
       launchOptions = {
         ...launchOptions,
-        args,
+        args: [...args, "--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"], 
         executablePath: await executablePath(),
         headless: chromiumHeadless,
-        defaultViewport,
       };
     } else {
       puppeteer = await import("puppeteer");
