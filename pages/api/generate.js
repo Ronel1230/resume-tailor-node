@@ -100,15 +100,18 @@ Job Description: ${jd}
 
     // Generate PDF
     const isVercel = !!process.env.VERCEL_ENV;
-    let puppeteer, launchOptions = {headless: "new"};
-    
-    if(isVercel){
-      const chromium = await import("@sparticuz/chromium");
+    let puppeteer, launchOptions = { headless: "new" };
+
+    if (isVercel) {
+      const { executablePath, args, headless, defaultViewport } = await import("@sparticuz/chromium");
       puppeteer = await import("puppeteer-core");
+
       launchOptions = {
         ...launchOptions,
-        args: chromium.args,
-        executablePath: await chromium.executablePath(),
+        args,
+        executablePath: await executablePath(),
+        headless,
+        defaultViewport,
       };
     } else {
       puppeteer = await import("puppeteer");

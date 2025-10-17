@@ -23,7 +23,6 @@ export default function Home() {
       body: JSON.stringify({ selected, company, role, jd })
     });
 
-    console.log('Response status:', res.status);
     if (!res.ok) {
       const errorText = await res.text();
       console.error('Error response:', errorText);
@@ -36,7 +35,6 @@ export default function Home() {
       a.download = `${selected}${company ? `_${company}` : ''}${role ? `_${role}` : ''}.pdf`;
       a.click();
       window.URL.revokeObjectURL(url);
-      alert("PDF generation successful! (Download code is currently commented out.)");
     }
   };
 
