@@ -105,8 +105,8 @@ Job Description: ${jd}
     let browser;
 
     if (isVercel) {
-      // Serverless Vercel using chrome-aws-lambda
-      const executablePath = await chromium.executablePath;
+      // Always use chrome-aws-lambda’s bundled executable
+      const executablePath = await chromium.executablePath || '/usr/bin/chromium-browser';
 
       browser = await puppeteer.launch({
         args: [...chromium.args, "--no-sandbox", "--disable-setuid-sandbox"],
