@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{name}} - Resume</title>
+<style>
+  /* General Reset */
+  body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #fff;
+    color: #222;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 4px double #444;
+  }
+  .header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    margin: 0;
+  }
+  .header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #555;
+    margin-top: 4px;
+  }
+  .header .contact {
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+  }
+
+  /* Section Titles */
+  .section {
+    margin-top: 30px;
+  }
+  .section h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 3px;
+    margin-bottom: 12px;
+    color: #333;
+  }
+
+  /* Summary */
+  .summary {
+    font-style: italic;
+    font-size: 13px;
+    color: #444;
+    padding-left: 10px;
+    border-left: 3px solid #888;
+  }
+
+  /* Skills */
+  .skills-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .skills-group strong {
+    width: 150px;
+    font-size: 13px;
+    color: #333;
+  }
+  .skills-list {
+    font-size: 12px;
+    flex: 1;
+  }
+
+  /* Experience */
+  .job {
+    margin-bottom: 18px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #555;
+    border-radius: 4px;
+  }
+  .job-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  .company-dates {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  .job-detail {
+    font-size: 12px;
+    margin-left: 15px;
+    list-style-type: disc;
+  }
+
+  /* Education */
+  .edu-item {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-left: 4px solid #555;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+  }
+  .edu-degree {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .edu-school {
+    font-size: 12px;
+    color: #555;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 10px;
+    color: #888;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>{{name}}</h1>
+  <h2>{{title}}</h2>
+  <div class="contact">{{location}} | {{phone}} | {{email}}</div>
+</div>
+
+{{#if summary}}
+<div class="section summary">
+  <h2>Summary</h2>
+  <p>{{summary}}</p>
+</div>
+{{/if}}
+
+{{#if skills}}
+<div class="section">
+  <h2>Skills</h2>
+  {{#each skills}}
+    <div class="skills-group">
+      <strong>{{formatKey @key}}</strong>
+      <div class="skills-list">{{join this ", "}}</div>
+    </div>
+  {{/each}}
+</div>
+{{/if}}
+
+{{#if experience}}
+<div class="section">
+  <h2>Experience</h2>
+  {{#each experience}}
+    <div class="job">
+      <div class="job-title">{{title}}</div>
+      <div class="company-dates">{{company}} | {{start_date}} - {{end_date}}</div>
+      <ul class="job-detail">
+        {{#each details}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/each}}
+</div>
+{{/if}}
+
+{{#if education}}
+<div class="section">
+  <h2>Education</h2>
+  {{#each education}}
+    <div class="edu-item">
+      <div class="edu-degree">{{degree}}</div>
+      <div class="edu-school">{{school}} | {{start_year}} - {{end_year}}</div>
+    </div>
+  {{/each}}
+</div>
+{{/if}}
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{name}} - Resume</title>
+<style>
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: #111;
+    line-height: 1.5;
+    margin: 10px 25px;
+    background-color: #fff;
+  }
+
+  .header {
+    text-align: left;
+    border-bottom: 2px solid #222;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  .header h1 { font-size: 30px; margin: 0; }
+  .header h2 { font-size: 16px; color: #555; margin-top: 4px; }
+
+  .contact-info {
+    font-size: 12px;
+    margin-top: 2px;
+    color: #555;
+  }
+
+  .section { margin-bottom: 18px; }
+  .section h2 {
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px dashed #888;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* Skills */
+  .skills-group { margin-bottom: 6px; }
+  .skills-group strong { font-size: 13px; display: block; margin-bottom: 2px; }
+  .skills-list { font-size: 12px; margin-left: 5px; }
+
+  /* Experience */
+  .job { margin-bottom: 14px; padding-left: 12px; border-left: 2px solid #444; }
+  .job-title { font-weight: bold; font-size: 14px; }
+  .company-dates { font-size: 12px; color: #555; margin-bottom: 5px; }
+  .job-detail { font-size: 12px; list-style-type: disc; margin-left: 20px; }
+
+  /* Education */
+  .edu-item { margin-bottom: 8px; }
+  .edu-degree { font-weight: bold; font-size: 13px; }
+  .edu-school { font-size: 12px; color: #555; }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>{{name}}</h1>
+  <h2>{{title}}</h2>
+  <div class="contact-info">{{location}} | {{phone}} | {{email}}</div>
+</div>
+
+{{#if summary}}
+<div class="section">
+  <h2>Profile</h2>
+  <p>{{summary}}</p>
+</div>
+{{/if}}
+
+{{#if skills}}
+<div class="section">
+  <h2>Skills & Abilities</h2>
+  {{#each skills}}
+    <div class="skills-group">
+      <strong>{{formatKey @key}}</strong>
+      <div class="skills-list">{{join this ", "}}</div>
+    </div>
+  {{/each}}
+</div>
+{{/if}}
+
+{{#if experience}}
+<div class="section">
+  <h2>Experience</h2>
+  {{#each experience}}
+    <div class="job">
+      <div class="job-title">{{title}}</div>
+      <div class="company-dates">{{company}} | {{start_date}} - {{end_date}}</div>
+      <ul class="job-detail">
+        {{#each details}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/each}}
+</div>
+{{/if}}
+
+{{#if education}}
+<div class="section">
+  <h2>Education</h2>
+  {{#each education}}
+    <div class="edu-item">
+      <div class="edu-degree">{{degree}}</div>
+      <div class="edu-school">{{school}} | {{start_year}} - {{end_year}}</div>
+    </div>
+  {{/each}}
+</div>
+{{/if}}
+
+</body>
+</html>

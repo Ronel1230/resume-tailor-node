@@ -1,0 +1,85 @@
+{
+    "name": "Rahul Ambala",
+    "title": "Senior Software Engineer",
+    "location": "Nazareth, PA, US",
+    "phone": "737-244-0274",
+    "email": "work.rahulambala@outlook.com",
+    "summary": "Innovative and results-driven Senior Full Stack Engineer with over 11 years of experience architecting scalable web applications and AI-driven systems using Node.js, Nest.js, and Python. Adept at integrating AI/ML pipelines, microservices, and automation workflows with React, Angular, Vue, and Next.js. Proven ability to deliver end-to-end cloud solutions leveraging AWS, GCP, and Azure, ensuring high availability, observability, and performance. Experienced in Agile, CI/CD automation, and cross-functional leadership, delivering measurable business outcomes.",
+    "skills": {
+      "Programming Languages": ["JavaScript (ES6+)", "TypeScript", "Python", "SQL", "Bash", "Go", "Java"],
+      "Frameworks & Libraries": ["Node.js", "Nest.js", "Express.js", "FastAPI", "Flask", "Django", "React.js", "Angular", "Vue.js", "Next.js", "Redux", "RxJS"],
+      "AI & ML Technologies": ["TensorFlow", "PyTorch", "scikit-learn", "LangChain", "OpenAI API", "Hugging Face Transformers", "RAG", "GPT-4", "BERT", "T5", "spaCy", "NLP", "Deep Learning", "LLM Integration"],
+      "Cloud Platforms": ["AWS (Lambda, ECS, SageMaker, RDS)", "GCP (Cloud Run, Vertex AI, Pub/Sub)", "Azure (Functions, AKS)", "Firebase"],
+      "DevOps & MLOps": ["Docker", "Kubernetes", "Helm", "Jenkins", "MLflow", "Airflow", "Terraform", "GitHub Actions", "GitLab CI/CD"],
+      "Databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Cassandra", "ElasticSearch", "Pinecone"],
+      "API & Microservices": ["RESTful APIs", "GraphQL", "gRPC", "Event-Driven Architecture", "WebSockets", "OAuth 2.0", "JWT", "API Gateway"],
+      "Monitoring & Observability": ["Prometheus", "Grafana", "ELK Stack", "Sentry", "New Relic"],
+      "Automation & Testing": ["Cypress", "Jest", "Mocha", "PyTest", "Selenium", "Locust", "Robot Framework"],
+      "Frontend Tooling": ["Webpack", "Babel", "ESLint", "Vite", "Storybook", "Tailwind CSS"],
+      "Collaboration & Methodologies": ["Jira", "Confluence", "Slack", "Notion", "Agile/Scrum", "Kanban"]
+    },
+    "experience": [
+      {
+        "company": "United States Postal Service",
+        "title": "Senior Software Engineer",
+        "start_date": "Feb 2019",
+        "end_date": "Sep 2025",
+        "details": [
+          "Architected Node.js microservices for intelligent mail routing, integrated with Python FastAPI ML services for predictive anomaly detection, reducing operational delays by 35%.",
+          "Built AI/ML-assisted workflows using TensorFlow and XGBoost in Python, embedded into Node.js APIs, enhancing real-time content validation accuracy by 42%.",
+          "Designed event-driven architecture using Azure Service Bus, Kafka, and SignalR, coupled with React.js dashboards for real-time monitoring, increasing system observability by 60%.",
+          "Deployed distributed microservices on AKS and AWS ECS with automated CI/CD pipelines (GitHub Actions, Azure DevOps), achieving 99.99% deployment reliability with rollback automation.",
+          "Modernized legacy C# ASP.NET MVC and Node.js systems into microservices architecture, introducing dependency injection, async I/O, and DDD patterns, improving maintainability by 50%.",
+          "Led Agile sprints coordinating AI, data engineering, and backend teams, achieving 96% sprint completion accuracy while aligning with customer SLAs.",
+          "Mentored engineers in Node.js performance optimization, microservice observability, and API gateway design, accelerating adoption of cloud-native best practices.",
+          "Implemented monitoring and alerting with Prometheus, Grafana, and ELK Stack, reducing incident response times by 40%."
+        ]
+      },
+      {
+        "company": "Murad",
+        "title": "Senior Software Engineer",
+        "start_date": "Nov 2016",
+        "end_date": "Jan 2019",
+        "details": [
+          "Developed Node.js backend services powering high-traffic e-commerce platforms, using AWS Lambda, S3, and DynamoDB for serverless scalability, handling peak loads with 99.9% uptime.",
+          "Designed REST and GraphQL APIs for React.js and Angular SPAs, implementing JWT authentication, RBAC, and caching strategies, lowering response latency by 30%.",
+          "Built Next.js dashboards for real-time order tracking and analytics, integrated with Python ETL scripts and Node.js aggregation services, improving data availability and insights by 50%.",
+          "Automated CI/CD pipelines using Jenkins and Docker, integrating unit, integration, and load testing via Jest, Mocha, PyTest, and Locust, reducing deployment time by 45%.",
+          "Refactored monolithic Node.js and .NET apps into loosely coupled microservices with CQRS and event sourcing, improving scalability and fault tolerance.",
+          "Collaborated in Agile Scrum ceremonies, backlog grooming, sprint reviews, and stakeholder demos, mentoring junior engineers in cloud-native microservice design and Python automation integration.",
+          "Implemented centralized logging and monitoring with ELK Stack and Sentry, reducing critical system downtime by 35%.",
+          "Integrated Python scripts for data processing, AI/ML model inference, and automation tasks, streamlining workflows and improving operational efficiency."
+        ]
+      },
+      {
+        "company": "PepsiCo",
+        "title": "Software Engineer",
+        "start_date": "Feb 2013",
+        "end_date": "May 2016",
+        "details": [
+          "Developed Node.js REST APIs and Python automation scripts for IoT telemetry ingestion, reducing downtime by 20% and improving data reliability by 40%.",
+          "Built AngularJS dashboards (2014–2016) powered by Node.js APIs and SQL Server, visualizing sensor data and production KPIs in real-time for plant engineers.",
+          "Integrated Python scripts for predictive maintenance, enabling early detection of machine faults and reducing unscheduled downtime by 15%.",
+          "Designed Azure-based ETL pipelines using Functions, Blob Storage, and Data Factory, automating nightly data processing and reducing manual effort by 70%.",
+          "Refactored legacy Node.js and .NET applications into modular microservices, enabling containerized deployment on Docker Swarm and faster CI/CD cycles.",
+          "Introduced Agile processes, sprint planning, and retrospectives to improve iteration speed, delivery quality, and team collaboration.",
+          "Implemented API versioning, caching, and authentication strategies, improving reliability and maintainability for large-scale IoT systems."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master’s degree in Information Technology",
+        "school": "Wilmington University",
+        "start_year": "2011",
+        "end_year": "2012"
+      },
+      {
+        "degree": "Bachelor’s degree in Computer Science",
+        "school": "Jawaharial Nehru Technological University",
+        "start_year": "2004",
+        "end_year": "2008"
+      }
+    ]
+  }
+  

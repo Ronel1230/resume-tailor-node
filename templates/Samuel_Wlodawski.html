@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>{{name}} — Resume</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --muted: #6b6b6b;
+      --ink: #111111;
+      --soft: #f4f5f6;
+      --accent: #2f2f2f;
+      --gap: 18px;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 26px auto;
+      padding: 26px;
+      box-sizing: border-box;
+    }
+
+    .mini {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .contact-simple {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-top: 8px;
+    }
+
+    .contact-simple a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .contact-simple a:hover {
+      text-decoration: underline;
+    }
+
+    .skills-area {
+      margin-top: 18px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .chip {
+      background: var(--soft);
+      padding: 6px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid #eee;
+      margin-top: 7px;
+    }
+
+    .edu-list {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .edu-item {
+      font-size: 13px;
+      color: var(--ink);
+    }
+
+    .edu-meta {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .name {
+      font-family: "Georgia", serif;
+      font-size: 34px;
+      letter-spacing: -0.6px;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    .role {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+
+    .links {
+      font-size: 13px;
+      margin-top: 4px;
+      color: var(--muted);
+    }
+
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .summary {
+      margin-top: 12px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01));
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      border: 1px solid #f0f0f0;
+    }
+
+    .timeline {
+      margin-top: 20px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px dashed #eee;
+      align-items: start;
+    }
+
+    .timeline-left {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: right;
+      padding-right: 8px;
+    }
+
+    .timeline-right {
+      padding-left: 6px;
+    }
+
+    .company-line {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .job-title {
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .company-meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-left: 4px;
+    }
+
+    .bullets {
+      margin: 8px 0 0 0;
+      padding-left: 18px;
+      font-size: 13px;
+      color: #222;
+    }
+
+    .bullets li {
+      margin-bottom: 6px;
+    }
+
+    .sect-heading {
+      margin-top: 28px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="hero">
+      <h1 class="name">{{name}}</h1>
+      <div class="role">{{title}}</div>
+    </header>
+
+    <!-- Contact -->
+    <div class="contact-simple">
+      <div>{{location}} | {{phone}} | {{email}}</div>
+      {{#if linkedin}}<div><a href="{{linkedin}}" target="_blank">{{linkedin}}</a></div>{{/if}}
+      {{#if website}}<div><a href="{{website}}" target="_blank">{{website}}</a></div>{{/if}}
+    </div>
+
+    <!-- Skills -->
+    <div class="skills-area">
+      <div style="margin-top:14px;font-size:13px;font-weight:700;color:var(--accent)">Technical Skills</div>
+      <div class="skills-grid">
+        {{#each skills}}
+        <div style="width:100%;margin-top:8px;">
+          <div style="font-size:12px;font-weight:700;color:var(--muted)">{{formatKey @key}}</div>
+          {{#each this}}
+          <span class="chip">{{this}}</span>
+          {{/each}}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="timeline" aria-label="Work experience">
+      <div class="sect-heading">Work Experience</div>
+      {{#each experience}}
+      <article class="timeline-item">
+        <div class="timeline-left">
+          <div>{{start_date}}</div>
+          <div style="margin-top:6px;font-weight:700;color:var(--muted)">{{end_date}}</div>
+        </div>
+        <div class="timeline-right">
+          <div class="company-line">
+            <h3 class="job-title">{{title}}</h3>
+            <div class="company-meta">{{company}} • {{#if location}}{{location}}{{/if}}</div>
+          </div>
+          <ul class="bullets">
+            {{#each details}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </article>
+      {{/each}}
+    </div>
+    <!-- Education -->
+    {{#if education}}
+    <div style="margin-top:16px;">
+      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:8px">Education</div>
+      <div class="edu-list">
+        {{#each education}}
+        <div style="font-size:13px;font-weight:600">{{degree}}</div>
+        <div style="font-size:12px;color:var(--muted)">{{school}} {{#if start_year}}| {{start_year}}{{#if end_year}}
+          - {{end_year}}{{/if}}{{/if}}</div>
+        {{/each}}
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</body>
+
+</html>

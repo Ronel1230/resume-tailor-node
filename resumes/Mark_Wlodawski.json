@@ -1,0 +1,97 @@
+{
+  "name": "Mark Wlodawski",
+  "title": "Senior Software Engineer",
+  "email": "markw.developer@gmail.com",
+  "phone": "407-960-9318",
+  "location": "Orlando, Florida, US",
+  "linkedin": "https://www.linkedin.com/in/markaiml",
+  "website": "",
+  "summary": "Senior Full Stack Engineer with 10+ years of experience delivering revenue-impacting, consumer-facing applications in fintech and SaaS. Proven expertise in React.js, Next.js, and Node.js for building scalable, high-performance applications. Skilled at mentoring teams, shaping engineering roadmaps, and driving operational excellence through automation, CI/CD, and best practices. Adept at collaborating with management and cross-functional teams to deliver features that enhance customer experience and business growth. Passionate about building maintainable, reliable, and user-friendly solutions.",
+  "skills": {
+    "Frontend": ["React.js", "Next.js", "Svelte", "Angular", "Vue.js", "Redux", "Tailwind CSS", "Material UI", "HTML5", "CSS3", "Responsive Design"],
+    "Backend": ["Node.js (Express, NestJS)", "REST APIs", "GraphQL", "WebSockets", "Microservices", "Event-driven architecture"],
+    "Databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB"],
+    "Cloud & DevOps": ["AWS (Lambda, ECS, S3, RDS, CloudWatch)", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "GitLab CI/CD"],
+    "Testing & Quality": ["Jest", "Cypress", "RSpec", "Postman", "unit/integration/e2e tests", "TDD", "BDD"],
+    "Collaboration & Leadership": ["Agile/Scrum", "Jira", "Confluence", "Code Reviews", "Mentorship", "Sprint Planning", "Roadmap Shaping"]
+  },
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Cognizant",
+      "location": "",
+      "start_date": "Apr 2024",
+      "end_date": "Sep 2025",
+      "details": [
+        "Delivered high-impact features with React.js, Next.js, and Node.js for fintech applications, directly contributing to revenue growth.",
+        "Collaborated with management to define engineering roadmaps and align technical priorities with business objectives.",
+        "Developed robust APIs and backend services supporting multi-vertical applications and consumer platforms.",
+        "Improved development velocity by implementing CI/CD pipelines with GitHub Actions and automating release processes.",
+        "Mentored junior engineers in frontend development, Node.js best practices, and code quality standards, improving team productivity by 25%.",
+        "Partnered with product managers and designers to create user-focused, scalable solutions aligned with customer needs.",
+        "Reduced production incidents by 30% through enhanced testing frameworks and observability tools.",
+        "Led moderately complex projects, balancing technical execution with operational excellence and stakeholder communication.",
+        "Built reusable component libraries and design systems to maintain UI consistency across multiple verticals.",
+        "Enhanced performance and reliability of web applications, reducing average page load times by 35%."
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Third Eye Software",
+      "location": "",
+      "start_date": "Nov 2021",
+      "end_date": "Mar 2024",
+      "details": [
+        "Delivered Next.js and React.js applications serving thousands of daily active fintech users with secure, scalable experiences.",
+        "Designed and implemented Node.js APIs and microservices, optimizing backend performance and data integrity.",
+        "Partnered with leadership to shape team processes and technical direction, ensuring alignment with company goals.",
+        "Reduced deployment downtime by 80% with containerized services (Docker, Kubernetes) and AWS deployments.",
+        "Built testing pipelines (Jest, Cypress) that improved release confidence and reduced bug rates.",
+        "Mentored teammates in React.js and Next.js, helping upskill engineers and shorten onboarding cycles.",
+        "Led projects introducing real-time features with WebSockets, enhancing user engagement in fintech platforms.",
+        "Improved team delivery speed by introducing Agile best practices and code review standards.",
+        "Collaborated with global teams across time zones, delivering projects on time and within scope.",
+        "Drove operational improvements that reduced technical debt and increased system stability."
+      ]
+    },
+    {
+      "title": "Full Stack Engineer",
+      "company": "Toptal",
+      "location": "",
+      "start_date": "Aug 2015",
+      "end_date": "Nov 2021",
+      "details": [
+        "Built consumer-facing applications for fintech and SaaS clients using React.js, Next.js, and Node.js.",
+        "Delivered end-to-end features across frontend and backend, improving user experience and driving customer adoption.",
+        "Designed and maintained REST and GraphQL APIs powering responsive web and mobile applications.",
+        "Partnered with product and business stakeholders to deliver features that improved retention and engagement.",
+        "Implemented unit, integration, and end-to-end testing frameworks, improving quality and reducing regressions.",
+        "Enhanced frontend performance with lazy loading, caching, and code splitting, reducing load times by 40%.",
+        "Contributed to multiple large-scale consumer payment and fintech applications with high reliability requirements.",
+        "Deployed services on AWS with Docker and Kubernetes, ensuring scalability and uptime.",
+        "Collaborated in Agile ceremonies and cross-functional planning sessions to align technical work with customer needs.",
+        "Supported production environments with on-call rotations, ensuring fast resolution of customer-impacting issues."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master’s degree of Engineering",
+      "school": "University of Memphis",
+      "start_year": "2011",
+      "end_year": ""
+    },
+    {
+      "degree": "Certificated AI Engineer",
+      "school": "USAII",
+      "start_year": "May 2024",
+      "end_year": ""
+    },
+    {
+      "degree": "Certificated Cloud Practitioner",
+      "school": "AWS",
+      "start_year": "Jan 2023",
+      "end_year": ""
+    }
+  ]
+}

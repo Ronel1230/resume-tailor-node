@@ -1,0 +1,100 @@
+{
+    "name": "Karthikeyan Krishnaraj",
+    "title": "Full-Stack Engineer",
+    "location": "Abington, Pennsylvania, US",
+    "phone": "(430) 964-0546",
+    "email": "work.karthikeyan.krishnaraj@gmail.com",
+    "summary": "Results-driven Full-Stack Engineer with 15+ years of experience building scalable, secure, and AI/ML-powered applications using Node.js, Python, and PHP. Expert in cloud-native solutions on AWS, Azure, and GCP with Automation, DevOps, and Agile practices for rapid deployment. Adept at frontend frameworks like React, Angular, and Vue, integrating AI/ML models for predictive analytics and intelligent pipelines. Proven ability to translate complex business requirements into measurable, high-performance technical solutions.",
+    "skills": {
+      "Programming Languages": ["JavaScript (ES6+)", "TypeScript", "Python", "PHP", "SQL", "NoSQL", "Java", "Bash/Shell Scripting"],
+      "Frontend Frameworks & Libraries": ["React", "Angular", "Vue.js", "Next.js", "Redux", "RxJS", "Material-UI", "Bootstrap", "TailwindCSS"],
+      "Backend Frameworks & Platforms": ["Node.js", "Express.js", "NestJS", "Django", "Flask", "FastAPI", "GraphQL"],
+      "AI & ML": ["OpenAI API", "TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "NLP", "Computer Vision", "RPA (UiPath, Automation Anywhere)"],
+      "Cloud & Infrastructure": ["AWS (EC2, Lambda, S3, CloudFormation)", "Azure (App Services, Functions)", "GCP (Compute Engine, Cloud Functions)", "Docker", "Kubernetes", "Terraform", "Serverless Framework", "Prometheus", "Grafana"],
+      "DevOps & CI/CD": ["Jenkins", "GitHub Actions", "GitLab CI", "CircleCI", "ArgoCD", "Helm", "Docker Compose"],
+      "Databases": ["MySQL", "PostgreSQL", "MongoDB", "DynamoDB", "Redis", "Elasticsearch", "Firebase"],
+      "Testing & QA": ["Jest", "Mocha", "Chai", "Cypress", "Playwright", "Selenium", "Postman", "PyTest"],
+      "Security & Authentication": ["OAuth 2.0", "JWT", "SAML", "OpenID Connect", "RBAC", "OWASP Guidelines"],
+      "Project Management & Collaboration": ["Jira", "Confluence", "Trello", "Slack", "Bitbucket", "Git", "Figma"],
+      "Other Expertise": ["Microservices Architecture", "REST & GraphQL APIs", "Event-driven Systems", "Agile/Scrum Practices", "CI/CD Automation", "Performance Tuning", "Monitoring & Logging"]
+    },
+    "experience": [
+      {
+        "company": "Comcast",
+        "title": "Senior Software Engineer",
+        "start_date": "Jun 2018",
+        "end_date": "Sep 2025",
+        "details": [
+          "Architected and implemented scalable Node.js microservices integrated with Python AI/ML pipelines, reducing operational processing time by 45% across enterprise applications deployed on AWS and Azure.",
+          "Designed and deployed OAuth 2.0 and JWT authentication frameworks, automating token management and audit logging for 100% compliance with enterprise security standards.",
+          "Spearheaded React adoption in frontend apps, improving user engagement by 35% and reducing UI defect rates by 50% with component-driven development.",
+          "Developed predictive and recommendation systems using Python, TensorFlow, and Scikit-learn, increasing upsell conversion by 20%.",
+          "Built automated CI/CD pipelines with Jenkins, GitHub Actions, and Docker, reducing release cycle from two weeks to two days while maintaining zero downtime.",
+          "Implemented RPA automation using Python scripts and UiPath, saving over 200 hours per quarter on repetitive tasks.",
+          "Mentored Agile teams, leading sprint planning, backlog grooming, and code reviews, boosting sprint velocity by 25%.",
+          "Optimized Node.js services, Python pipelines, and SQL/NoSQL databases, enhancing throughput by 40% and reducing latency by 60%."
+        ]
+      },
+      {
+        "company": "Comcast",
+        "title": "Software Engineer",
+        "start_date": "Sep 2013",
+        "end_date": "May 2018",
+        "details": [
+          "Developed Node.js and Python applications supporting internal workflows and customer portals, achieving 99.9% uptime and reducing critical incidents by 35%.",
+          "Implemented cloud solutions on AWS (Lambda, EC2) and Azure (App Services), reducing infrastructure costs by 30% while scaling for 50,000+ concurrent users.",
+          "Built modular frontend components with Angular and Vue.js, improving reusability and reducing cross-browser issues by 40%.",
+          "Developed RESTful and GraphQL APIs, optimizing authentication, logging, and data retrieval, improving performance by 50%.",
+          "Established automated testing frameworks using Jest, Mocha, Selenium, and Postman, increasing code coverage to 95%.",
+          "Collaborated in Agile sprints, defining requirements and delivering features 20% faster.",
+          "Implemented enterprise-level security practices (JWT, OAuth 2.0, RBAC), ensuring OWASP compliance and reducing security incidents."
+        ]
+      },
+      {
+        "company": "Medecision",
+        "title": "Full Stack Developer",
+        "start_date": "Dec 2009",
+        "end_date": "Aug 2013",
+        "details": [
+          "Led development of high-traffic PHP LAMP applications, improving maintainability and reducing server load by 35%.",
+          "Designed interactive frontend features using HTML5, CSS3, JavaScript, and jQuery, ensuring responsive layouts across multiple browsers.",
+          "Built AJAX and JSON modules for real-time updates and dynamic dashboards, reducing page reloads by 50%.",
+          "Architected and optimized MySQL databases, improving query performance and scalability.",
+          "Integrated third-party APIs, automating workflows and extending platform functionality.",
+          "Implemented unit and integration testing with PHPUnit, reducing post-deployment issues by 40%.",
+          "Mentored junior developers and collaborated with UX/design teams for responsive, modern UI."
+        ]
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "title": "System Engineer",
+        "start_date": "Sep 2007",
+        "end_date": "Dec 2009",
+        "details": [
+          "Developed dynamic web applications using PHP LAMP stack, improving system scalability and performance.",
+          "Built front-end interfaces with HTML4/XHTML, CSS2, JavaScript, ensuring cross-browser compatibility.",
+          "Implemented AJAX-driven features for real-time updates, reducing page reload times by 40%.",
+          "Managed MySQL databases, optimizing queries and designing efficient schemas.",
+          "Conducted manual testing, reducing production defects by 25%.",
+          "Deployed websites and managed version control with SVN and FTP.",
+          "Collaborated with design teams using Adobe Photoshop and Dreamweaver to convert mockups into functional layouts.",
+          "Participated in Waterfall and early Agile projects, tracking tasks with Basecamp and Trac."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Computer Applications (MCA)",
+        "school": "Thiagarajar School of Management",
+        "start_year": "2007",
+        "end_year": "2007"
+      },
+      {
+        "degree": "Bachelor of Science (B.Sc.), Mathematics",
+        "school": "Bharathiar University",
+        "start_year": "2004",
+        "end_year": "2004"
+      }
+    ]
+  }
+  
