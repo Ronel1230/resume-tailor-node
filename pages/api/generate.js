@@ -1,10 +1,14 @@
 import fs from "fs";
 import path from "path";
 import Handlebars from "handlebars";
-import chromium from "chrome-aws-lambda";
+import { executablePath, args, defaultViewport, headless } from "@sparticuz/chromium";
 import puppeteer from "puppeteer-core";
 import OpenAI from "openai";
 import { parse } from "jsonc-parser";
+
+
+console.log("Chromium path:", await executablePath());
+console.log("Puppeteer version:", puppeteer.version());
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -101,25 +105,22 @@ Job Description: ${jd}
     const html = template(tailoredResume);
 
     // Generate PDF
+
     const isVercel = !!process.env.VERCEL_ENV;
     let browser;
 
     if (isVercel) {
-      // Always use chrome-aws-lambda’s bundled executable
-      const executablePath = await chromium.executablePath;
-
       browser = await puppeteer.launch({
-        args: chromium.args,
-        defaultViewport: chromium.defaultViewport,
-        executablePath,
-        headless: true,
-        ignoreHTTPSErrors: true,
+        args,
+        defaultViewport,
+        executablePath: await executablePath(),
+        headless,
       });
     } else {
-      // Local development using full puppeteer
-      const puppeteerFull = await import("puppeteer-core");
+      const puppeteerFull = await import("puppeteer");
       browser = await puppeteerFull.launch({ headless: true });
     }
+
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: "networkidle0" });
     const pdfBuffer = await page.pdf({
