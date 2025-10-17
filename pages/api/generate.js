@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import Handlebars from "handlebars";
-import puppeteer from "puppeteer";
 import OpenAI from "openai";
 import { parse } from "jsonc-parser";
 
@@ -100,7 +99,21 @@ Job Description: ${jd}
     const html = template(tailoredResume);
 
     // Generate PDF
-    /*const browser = await puppeteer.launch({ headless: "new" });
+    const isVercel = !!process.env.VERCEL_ENV;
+    let puppeteer, launchOptions = {headless: "new"};
+    
+    if(isVercel){
+      const chromium = await import("@sparticuz/chromium");
+      puppeteer = await import("puppeteer-core");
+      launchOptions = {
+        ...launchOptions,
+        args: chromium.args,
+        executablePath: await chromium.executablePath(),
+      };
+    } else {
+      puppeteer = await import("puppeteer");
+    }
+    const browser = await puppeteer.launch(launchOptions);
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: "networkidle0" });
     const pdfBuffer = await page.pdf({
@@ -121,8 +134,7 @@ Job Description: ${jd}
       "Content-Disposition",
       `attachment; filename=${selected}_${company || "Company"}_${role || "Role"}.pdf`
     );
-    res.send(pdfBuffer);*/
-    res.status(200).send("PDF generation successful (PDF sending code is currently commented out).");
+    res.send(pdfBuffer);
 
   } catch (err) {
     console.error("PDF generation or AI error:", err);
