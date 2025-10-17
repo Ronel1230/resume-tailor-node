@@ -103,16 +103,21 @@ Job Description: ${jd}
     let puppeteer, launchOptions = { headless: "new" };
 
     if (isVercel) {
+      // Import Chromium and Puppeteer-core
       const chromiumModule = await import("@sparticuz/chromium");
       puppeteer = await import("puppeteer-core");
 
-      // destructure named exports
-      const { executablePath, args, headless, defaultViewport } = chromiumModule;
+      // Use default export if it exists
+      const chromium = chromiumModule.default || chromiumModule;
+
+      // Destructure correctly
+      const { executablePath, args, headless: chromiumHeadless, defaultViewport } = chromium;
 
       launchOptions = {
         ...launchOptions,
         args,
-        executablePath: await executablePath(), // call the function
+        executablePath: await executablePath(),
+        headless: chromiumHeadless,
         defaultViewport,
       };
     } else {
