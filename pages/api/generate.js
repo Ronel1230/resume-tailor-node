@@ -103,21 +103,15 @@ Job Description: ${jd}
     let puppeteer, launchOptions = { headless: "new" };
 
     if (isVercel) {
-      // Import Chromium and Puppeteer-core
-      const chromiumModule = await import("@sparticuz/chromium");
+      // Serverless Vercel
+      const chromium = (await import("@sparticuz/chromium")).default;
       puppeteer = await import("puppeteer-core");
 
-      // Use default export if it exists
-      const chromium = chromiumModule.default || chromiumModule;
-
-      // Destructure correctly
-      const { executablePath, args, headless: chromiumHeadless } = chromium;
-
       launchOptions = {
-        ...launchOptions,
-        args: [...args, "--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"], 
-        executablePath: await executablePath(),
-        headless: chromiumHeadless,
+        args: [...chromium.args, "--no-sandbox", "--disable-setuid-sandbox"],
+        defaultViewport: chromium.defaultViewport,
+        executablePath: await chromium.executablePath(),
+        headless: chromium.headless,
       };
     } else {
       puppeteer = await import("puppeteer");
