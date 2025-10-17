@@ -106,18 +106,19 @@ Job Description: ${jd}
 
     if (isVercel) {
       // Always use chrome-aws-lambda’s bundled executable
-      const executablePath = await chromium.executablePath || '/usr/bin/chromium-browser';
+      const executablePath = await chromium.executablePath;
 
       browser = await puppeteer.launch({
-        args: [...chromium.args, "--no-sandbox", "--disable-setuid-sandbox"],
+        args: chromium.args,
         defaultViewport: chromium.defaultViewport,
         executablePath,
-        headless: chromium.headless,
+        headless: true,
+        ignoreHTTPSErrors: true,
       });
     } else {
       // Local development using full puppeteer
-      const puppeteerFull = await import("puppeteer");
-      browser = await puppeteerFull.launch({ headless: "new" });
+      const puppeteerFull = await import("puppeteer-core");
+      browser = await puppeteerFull.launch({ headless: true });
     }
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: "networkidle0" });
