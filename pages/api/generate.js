@@ -100,7 +100,7 @@ Job Description: ${jd}
     const html = template(tailoredResume);
 
     // Generate PDF
-    const browser = await puppeteer.launch({ headless: "new" });
+    /*const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: "networkidle0" });
     const pdfBuffer = await page.pdf({
@@ -121,7 +121,8 @@ Job Description: ${jd}
       "Content-Disposition",
       `attachment; filename=${selected}_${company || "Company"}_${role || "Role"}.pdf`
     );
-    res.send(pdfBuffer);
+    res.send(pdfBuffer);*/
+    res.status(200).send("PDF generation successful (PDF sending code is currently commented out).");
 
   } catch (err) {
     console.error("PDF generation or AI error:", err);
