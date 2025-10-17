@@ -106,10 +106,12 @@ Job Description: ${jd}
 
     if (isVercel) {
       // Serverless Vercel using chrome-aws-lambda
+      const executablePath = await chromium.executablePath;
+
       browser = await puppeteer.launch({
         args: [...chromium.args, "--no-sandbox", "--disable-setuid-sandbox"],
         defaultViewport: chromium.defaultViewport,
-        executablePath: await chromium.executablePath(),
+        executablePath,
         headless: chromium.headless,
       });
     } else {
