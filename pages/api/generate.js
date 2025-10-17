@@ -1,6 +1,8 @@
 import fs from "fs";
 import path from "path";
 import Handlebars from "handlebars";
+import chromium from "chrome-aws-lambda";
+import puppeteer from "puppeteer-core";
 import OpenAI from "openai";
 import { parse } from "jsonc-parser";
 
@@ -100,23 +102,21 @@ Job Description: ${jd}
 
     // Generate PDF
     const isVercel = !!process.env.VERCEL_ENV;
-    let puppeteer, launchOptions = { headless: "new" };
+    let browser;
 
     if (isVercel) {
-      // Serverless Vercel
-      const chromium = (await import("@sparticuz/chromium")).default;
-      puppeteer = await import("puppeteer-core");
-
-      launchOptions = {
+      // Serverless Vercel using chrome-aws-lambda
+      browser = await puppeteer.launch({
         args: [...chromium.args, "--no-sandbox", "--disable-setuid-sandbox"],
         defaultViewport: chromium.defaultViewport,
         executablePath: await chromium.executablePath(),
         headless: chromium.headless,
-      };
+      });
     } else {
-      puppeteer = await import("puppeteer");
+      // Local development using full puppeteer
+      const puppeteerFull = await import("puppeteer");
+      browser = await puppeteerFull.launch({ headless: "new" });
     }
-    const browser = await puppeteer.launch(launchOptions);
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: "networkidle0" });
     const pdfBuffer = await page.pdf({
