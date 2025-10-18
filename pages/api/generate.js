@@ -1,14 +1,13 @@
 import fs from "fs";
 import path from "path";
 import Handlebars from "handlebars";
-import { executablePath, args, defaultViewport, headless } from "@sparticuz/chromium";
+import chromium from "@sparticuz/chromium";
 import puppeteer from "puppeteer-core";
 import OpenAI from "openai";
 import { parse } from "jsonc-parser";
 
 
-console.log("Chromium path:", await executablePath());
-console.log("Puppeteer version:", puppeteer.version());
+console.log("Chromium path:", await chromium.executablePath());
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -72,23 +71,40 @@ export default async function handler(req, res) {
 
     // OpenAI prompt
     const prompt = `
-You are a professional resume writer and career expert. Your task is to tailor the given resume to match the provided job description.
+You are a world-class professional resume writer, career strategist, and ATS expert. I will provide:  
 
-Rules:
-1. Write 7-8 long, results-driven bullets for each job experience.
-2. Include AI/ML, Cloud, and Automation experience.
-3. Rewrite the summary as a 4-line professional summary that hooks a recruiter in under 10 seconds.
-4. Include a comprehensive, relevant skills section.
-5. Optimize the resume for ATS (Applicant Tracking Systems).
-6. Tailor each section to match the language and keywords in the job description.
-7. Rephrase experience to highlight impact, results, and transferable skills using action verbs and quantifiable outcomes.
-8. Ensure technologies match the correct time periods (e.g., .NET → Azure, SQL Server, EF, Azure Functions; Go → Cloud-native, gRPC, Prometheus, Grafana; Java → Spring, JUnit, Jenkins; Python → AI/ML, Django/FastAPI, Celery, SageMaker/Vertex AI; PHP → Laravel/Symfony; JS → Node.js/React/Next.js; Ruby → Rails, Heroku, Sidekiq).
-9. I want much and much skills as possible, so you can add more skills to the resume.
+1. A candidate’s **existing resume in JSON format**.  
+2. A **job description (JD)** for a specific role.  
 
-Important: Only output valid JSON in the same structure(except skills-group names and skills themselves) as the original resume. No extra text.
+Your task is to **create a completely new resume** in JSON format that is **fully tailored to the JD**, using the existing resume only as a source of factual information (experience, roles, education, dates, locations). Do NOT simply rewrite or paraphrase the old resume—reconstruct the resume from scratch so that it:  
 
-Resume: ${JSON.stringify(resumeJson)}
+1. **Professional Summary:** Write a new 3–4 line summary that immediately hooks recruiters. Focus on top skills, leadership, domain expertise, and alignment with the JD.  
+2. **Skills Section:**  
+   - Include **all JD-required skills first**.  
+   - Add as many relevant, current, in-demand skills as possible to maximize ATS keyword coverage.  
+   - Organize skills logically (Frontend, Backend, Cloud/DevOps, AI/ML, Databases, Software Practices, Tools & Frameworks, etc.).  
+3. **Experience Section:**  
+   - Each job must have **7–8 very long, detailed, results-driven bullets**.  
+   - Bullets must show measurable outcomes, business impact, and technical leadership.  
+   - Emphasize **JD keywords and required skills**: technologies, frameworks, cloud, AI/ML, automation, security, performance, scalability, mentoring, CI/CD, serverless, APIs, etc.  
+   - Include **AI/ML, cloud, and automation achievements** wherever relevant.  
+   - Ensure **technology stacks are realistic for the time period** of each role.  
+4. **Education Section:** Keep factual details from the original resume unless the JD highlights certifications or degrees.  
+5. **ATS Optimization:** Use exact terminology from the JD for skills, technologies, and responsibilities. Avoid listing unrelated or outdated tech unless highly relevant.  
+6. **Formatting:** Output **valid JSON only**, maintaining the same structure as the original resume. Do NOT include any extra text outside JSON.  
+7. **Key Difference:** This must result in a **fully new resume**, not just a rewritten version. Every section (summary, skills, experience) must be reconstructed to **maximize alignment with the JD** and **showcase measurable impact**.  
+
+**Input:**  
+Resume JSON: ${JSON.stringify(resumeJson)}
 Job Description: ${jd}
+
+
+**Output:**  
+Return the **fully new, ATS-optimized resume JSON**, including:  
+- A brand-new professional summary  
+- A skills section with maximum JD-relevant skills  
+- Each job rewritten with **7–8 long, detailed bullets**  
+- Full alignment with JD, measurable achievements, and optimized for ATS
 `;
 
     const aiResponse = await callOpenAI(prompt);
@@ -111,10 +127,10 @@ Job Description: ${jd}
 
     if (isVercel) {
       browser = await puppeteer.launch({
-        args,
-        defaultViewport,
-        executablePath: await executablePath(),
-        headless,
+        args: chromium.args,
+        defaultViewport: chromium.defaultViewport,
+        executablePath: await chromium.executablePath(),
+        headless: chromium.headless,
       });
     } else {
       const puppeteerFull = await import("puppeteer");

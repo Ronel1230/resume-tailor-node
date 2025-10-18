@@ -109,13 +109,6 @@
         "start_date": "Sep 2023",
         "end_date": "Sep 2025",
         "details": [
-          "Designed and implemented Node.js (NestJS) microservices to handle over 3 million IoT telemetry events per day, creating an event-driven architecture with RabbitMQ and gRPC, reducing inter-service latency by 50% and increasing system throughput by 40%, while ensuring high availability and fault tolerance.",
-          "Integrated Python-based AI/ML pipelines (TensorFlow, scikit-learn, FastAPI) into Node services to detect sensor anomalies and predict maintenance needs, cutting false-positive alerts by 42%, and enabling proactive device monitoring that improved overall operational efficiency by 35%.",
-          "Migrated monolithic Node and Python services to AWS cloud-native microservices (ECS, Lambda, S3, RDS) using Terraform and CloudFormation, achieving 55% faster deployment cycles, automated infrastructure provisioning, and a more resilient architecture capable of scaling dynamically.",
-          "Built React + Next.js dashboards connected to Node.js and Python APIs for live IoT metrics visualization, enabling operations teams to identify anomalies in real-time, track KPIs, and make data-driven decisions with sub-200ms latency.",
-          "Implemented CI/CD pipelines with GitHub Actions and Docker, automating builds, tests, and deployments, reducing manual deployment efforts by 70% while increasing deployment success rates to 95%, and improving cross-team collaboration.",
-          "Developed monitoring, logging, and predictive alerting with Prometheus, Grafana, and CloudWatch, achieving 99.98% uptime, establishing early-warning alerts, and enabling root-cause analysis for critical infrastructure incidents.",
-          "Led a cross-functional Agile team of 7 engineers, conducting sprint planning, architectural reviews, and mentorship sessions, improving team delivery velocity by 25%, enforcing coding standards, and ensuring knowledge transfer across backend, Python, and frontend stacks."
         ]
       },
       {
@@ -124,14 +117,7 @@
         "start_date": "Sep 2021",
         "end_date": "Jul 2023",
         "details": [
-          "Architected a distributed logistics platform using Node.js (NestJS, Express) that processed millions of shipment events per day with high reliability and low latency, enabling real-time tracking for internal operations and external partners.",
-          "Integrated Python ML pipelines (Pandas, NumPy, TensorFlow) to implement predictive analytics for shipment route optimization, reducing late deliveries by 24% and lowering fuel and operational costs by 18% annually.",
-          "Developed Node.js microservices for asynchronous API integrations with external carriers, using REST and WebSocket protocols, enabling real-time ETA updates, dynamic notifications, and seamless cross-system communication.",
-          "Modernized legacy PHP and .NET components into modular Node.js microservices, containerized with Docker, orchestrated on AWS ECS, and automated with Terraform, improving maintainability, horizontal scalability, and deployment speed by 50%.",
-          "Built React and Angular frontends interfacing with Node APIs, providing real-time dashboards for shipment tracking, customer notifications, and operational KPIs, improving customer satisfaction by 30%.",
-          "Implemented automated testing frameworks using Jest, PyTest, and Postman, reducing QA cycles by 45% and ensuring stable multi-service releases across production and staging environments.",
-          "Optimized PostgreSQL and MongoDB queries, enhancing report generation speed and analytics API performance by 60%, enabling faster decision-making for logistics operations."
-        ]
+          ]
       },
       {
         "title": "Software Engineer",
@@ -139,14 +125,7 @@
         "start_date": "Feb 2019",
         "end_date": "Jun 2021",
         "details": [
-          "Developed backend services using Node.js and Python (Django, Flask) to support high-throughput internal analytics platforms, handling millions of user sessions while ensuring sub-second API response times and high concurrency.",
-          "Built AngularJS dashboards (2012+) for real-time visualization of system performance and operational metrics, enabling engineering and product teams to quickly detect bottlenecks and take corrective actions.",
-          "Integrated AI/ML workflows using Python (TensorFlow prototypes) into Node.js APIs for predictive analytics, automating internal reporting, user behavior tracking, and anomaly detection processes.",
-          "Automated ETL pipelines and data aggregation using Python scripts and Airflow DAGs, reducing manual intervention by 70% and improving reliability of internal analytics workflows.",
-          "Developed Node.js microservices for asynchronous event processing, improving modularity, reducing processing latency by 30%, and enhancing fault tolerance for critical internal services.",
-          "Conducted peer code reviews, refactoring, and test automation using Jest, PyTest, and Selenium, improving code maintainability, test coverage, and production reliability.",
-          "Actively participated in Agile sprint planning, architecture design reviews, and cross-team collaboration, contributing to scalable backend infrastructure design and long-term technical roadmap alignment."
-        ]
+         ]
       },
       {
         "title": "Software Developer",
@@ -154,14 +133,7 @@
         "start_date": "Oct 2010",
         "end_date": "Oct 2018",
         "details": [
-          "Developed Node.js and Python applications to automate complex financial and actuarial calculations, increasing team efficiency by 50% and reducing manual reporting errors.",
-          "Built interactive AJAX dashboards with jQuery and JavaScript for real-time reporting and data visualization, improving usability and operational insights by 35%.",
-          "Developed backend batch-processing scripts in Python and Node.js, automating large-scale data processing and reducing manual data entry errors significantly.",
-          "Introduced unit and integration testing frameworks (Jest, PyUnit) to ensure high-quality code delivery, reducing production defects by 20%.",
-          "Migrated legacy PHP applications to Node.js microservices, enhancing system maintainability, security, and performance.",
-          "Implemented early cloud-based workflows with AWS S3-compatible storage for archival and reporting, improving reliability and scalability.",
-          "Participated in Agile sprint planning, knowledge sharing, and documentation, improving team workflow efficiency and cross-team collaboration."
-        ]
+          ]
       }
     ],
     "education": [

@@ -25,15 +25,7 @@
         "start_date": "Jun 2018",
         "end_date": "Sep 2025",
         "details": [
-          "Architected and implemented scalable Node.js microservices integrated with Python AI/ML pipelines, reducing operational processing time by 45% across enterprise applications deployed on AWS and Azure.",
-          "Designed and deployed OAuth 2.0 and JWT authentication frameworks, automating token management and audit logging for 100% compliance with enterprise security standards.",
-          "Spearheaded React adoption in frontend apps, improving user engagement by 35% and reducing UI defect rates by 50% with component-driven development.",
-          "Developed predictive and recommendation systems using Python, TensorFlow, and Scikit-learn, increasing upsell conversion by 20%.",
-          "Built automated CI/CD pipelines with Jenkins, GitHub Actions, and Docker, reducing release cycle from two weeks to two days while maintaining zero downtime.",
-          "Implemented RPA automation using Python scripts and UiPath, saving over 200 hours per quarter on repetitive tasks.",
-          "Mentored Agile teams, leading sprint planning, backlog grooming, and code reviews, boosting sprint velocity by 25%.",
-          "Optimized Node.js services, Python pipelines, and SQL/NoSQL databases, enhancing throughput by 40% and reducing latency by 60%."
-        ]
+         ]
       },
       {
         "company": "Comcast",
@@ -41,14 +33,7 @@
         "start_date": "Sep 2013",
         "end_date": "May 2018",
         "details": [
-          "Developed Node.js and Python applications supporting internal workflows and customer portals, achieving 99.9% uptime and reducing critical incidents by 35%.",
-          "Implemented cloud solutions on AWS (Lambda, EC2) and Azure (App Services), reducing infrastructure costs by 30% while scaling for 50,000+ concurrent users.",
-          "Built modular frontend components with Angular and Vue.js, improving reusability and reducing cross-browser issues by 40%.",
-          "Developed RESTful and GraphQL APIs, optimizing authentication, logging, and data retrieval, improving performance by 50%.",
-          "Established automated testing frameworks using Jest, Mocha, Selenium, and Postman, increasing code coverage to 95%.",
-          "Collaborated in Agile sprints, defining requirements and delivering features 20% faster.",
-          "Implemented enterprise-level security practices (JWT, OAuth 2.0, RBAC), ensuring OWASP compliance and reducing security incidents."
-        ]
+         ]
       },
       {
         "company": "Medecision",
@@ -56,14 +41,7 @@
         "start_date": "Dec 2009",
         "end_date": "Aug 2013",
         "details": [
-          "Led development of high-traffic PHP LAMP applications, improving maintainability and reducing server load by 35%.",
-          "Designed interactive frontend features using HTML5, CSS3, JavaScript, and jQuery, ensuring responsive layouts across multiple browsers.",
-          "Built AJAX and JSON modules for real-time updates and dynamic dashboards, reducing page reloads by 50%.",
-          "Architected and optimized MySQL databases, improving query performance and scalability.",
-          "Integrated third-party APIs, automating workflows and extending platform functionality.",
-          "Implemented unit and integration testing with PHPUnit, reducing post-deployment issues by 40%.",
-          "Mentored junior developers and collaborated with UX/design teams for responsive, modern UI."
-        ]
+         ]
       },
       {
         "company": "Tata Consultancy Services",
@@ -71,14 +49,6 @@
         "start_date": "Sep 2007",
         "end_date": "Dec 2009",
         "details": [
-          "Developed dynamic web applications using PHP LAMP stack, improving system scalability and performance.",
-          "Built front-end interfaces with HTML4/XHTML, CSS2, JavaScript, ensuring cross-browser compatibility.",
-          "Implemented AJAX-driven features for real-time updates, reducing page reload times by 40%.",
-          "Managed MySQL databases, optimizing queries and designing efficient schemas.",
-          "Conducted manual testing, reducing production defects by 25%.",
-          "Deployed websites and managed version control with SVN and FTP.",
-          "Collaborated with design teams using Adobe Photoshop and Dreamweaver to convert mockups into functional layouts.",
-          "Participated in Waterfall and early Agile projects, tracking tasks with Basecamp and Trac."
         ]
       }
     ],

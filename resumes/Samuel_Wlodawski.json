@@ -21,13 +21,6 @@
         "start_date": "Dec 2024",
         "end_date": "Jul 2025",
         "details": [
-          "Engineered React front-end applications integrated with Python (Django, Flask) and Node.js backends for AI-driven interactive solutions.",
-          "Integrated AI/ML models using Python, TensorFlow, and Scikit-learn for real-time analytics and predictive modeling.",
-          "Architected RESTful and GraphQL APIs to support large-scale, data-intensive applications.",
-          "Deployed cloud infrastructure on AWS (EC2, Lambda, S3, SageMaker) using automated CI/CD pipelines.",
-          "Applied TDD practices with Jest and PyTest to maintain high code quality.",
-          "Optimized front-end performance using modular components, lazy loading, and virtualized rendering.",
-          "Mentored junior engineers on Angular best practices and full-stack integration strategies."
         ]
       },
       {
@@ -36,13 +29,7 @@
         "start_date": "Aug 2022",
         "end_date": "Jun 2024",
         "details": [
-          "Designed React dashboards and Angular components for healthcare and research analytics platforms.",
-          "Applied predictive analytics and NLP pipelines for patient outcomes using Python (Django, Flask), TensorFlow and Scikit-learn.",
-          "Built RESTful and GraphQL APIs for secure multi-client research workflows.",
-          "Orchestrated ETL pipelines using Pandas and Apache Airflow for high-volume datasets.",
-          "Streamlined CI/CD deployments via GitHub Actions and Azure DevOps.",
-          "Led code reviews and mentorship to ensure scalable architecture."
-        ]
+         ]
       },
       {
         "company": "Optomi",
@@ -50,13 +37,6 @@
         "start_date": "May 2018",
         "end_date": "May 2022",
         "details": [
-          "Developed enterprise dashboards using React with Python (Django, Flask) and Node.js backends.",
-          "Built event-driven microservices in Python and Node.js for distributed applications.",
-          "Deployed cloud-native solutions leveraging AWS (Lambda, S3, DynamoDB, EC2) with Infrastructure-as-Code.",
-          "Implemented unit and integration testing with Jest and PyTest to promote TDD practices.",
-          "Enhanced front-end performance with modular components, virtualized rendering, and lazy loading.",
-          "Coordinated with remote teams to align technical delivery with product requirements and sprint goals.",
-          "Built secure APIs and data pipelines for internal and client-facing enterprise applications."
         ]
       },
       {
@@ -65,14 +45,7 @@
         "start_date": "Jun 2015",
         "end_date": "Apr 2018",
         "details": [
-          "Developed interactive dashboards using Angular and React.js for supply chain and logistics tracking.",
-          "Designed and maintained REST APIs with Node.js and Express.js; integrated MySQL and MongoDB databases.",
-          "Led cloud migration initiatives, moving on-premises applications to AWS EC2 and S3.",
-          "Contributed to internal ERP module development, enhancing order tracking, shipping, and inventory control.",
-          "Established unit testing frameworks with Jest and Mocha to automate QA workflows.",
-          "Participated in Agile Scrum ceremonies, sprint planning, and backlog refinement.",
-          "Built real-time reporting dashboards, reducing manual spreadsheet workflows."
-        ]
+         ]
       }
     ],
     "education": [

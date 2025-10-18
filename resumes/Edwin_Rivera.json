@@ -30,16 +30,7 @@
         "start_date": "Mar 2025",
         "end_date": "Present",
         "details": [
-          "Developed responsive UI components using React and Next.js, integrating real-time messaging and scheduling APIs, improving daily active user retention by 27%.",
-          "Collaborated with backend teams (Node.js, Python, Ruby) to optimize API usage and reduce page interaction delays by 24%.",
-          "Implemented code splitting, lazy loading, and caching strategies, cutting initial page load times by 28% and improving Core Web Vitals.",
-          "Built reusable component libraries and design system modules, accelerating cross-team feature development by 20%.",
-          "Ensured WCAG 2.1 accessibility compliance, raising usability scores in internal audits by 34%.",
-          "Integrated analytics dashboards using WebSocket and REST APIs for near-instant updates and improved platform responsiveness.",
-          "Designed and executed frontend testing strategy with Jest, Cypress, and Storybook, reducing production bugs by 43%.",
-          "Mentored junior engineers on React, TypeScript, and performance optimization best practices.",
-          "Participated in cross-functional product reviews to maintain consistent UI/UX across multiple platforms."
-        ]
+         ]
       },
       {
         "company": "Pratt & Whitney",
@@ -48,16 +39,7 @@
         "start_date": "Feb 2023",
         "end_date": "Mar 2025",
         "details": [
-          "Built enterprise React and Next.js portals for engineering teams, improving workflow efficiency for thousands of internal users.",
-          "Integrated AI-powered features using LangChain and LLMs for documentation search and summarization within the frontend interfaces.",
-          "Collaborated with backend teams (FastAPI, Node.js) to implement secure and efficient API endpoints for data-driven features.",
-          "Optimized dashboard rendering and data visualization performance, reducing load latency by 35% on high-traffic pages.",
-          "Expanded frontend test coverage with Jest, Cypress, and Storybook, improving release reliability and reducing regressions.",
-          "Developed reusable components and Storybook documentation to support complex internal tool development.",
-          "Mentored junior engineers on React, TypeScript, and accessibility best practices.",
-          "Applied lazy loading, caching, and API request optimization to enhance Core Web Vitals and page speed.",
-          "Partnered with product, UX, and data teams to implement AI-driven features adopted organization-wide."
-        ]
+         ]
       },
       {
         "company": "Rx Marketing",
@@ -66,16 +48,7 @@
         "start_date": "Sep 2021",
         "end_date": "Oct 2022",
         "details": [
-          "Built Angular and React dashboards with RxJS streams and virtualization for large-scale analytics and reporting applications.",
-          "Collaborated with backend teams (Node.js/TypeScript) to integrate REST/GraphQL APIs, ensuring real-time updates and reliability.",
-          "Optimized frontend performance using memoization, virtualized lists, and lazy-loaded modules to handle high-volume datasets efficiently.",
-          "Developed reusable UI libraries and documentation, standardizing design patterns across multiple projects.",
-          "Ensured cross-browser and device compatibility, raising QA pass rates by 30%.",
-          "Established frontend testing protocols with Jest, Cypress, and Supertest, reducing regressions by 35%.",
-          "Integrated third-party services (OAuth, webhooks) with retry logic and SLA compliance for robust user experiences.",
-          "Participated in Agile ceremonies and backlog refinement to prioritize UI/UX improvements.",
-          "Mentored junior engineers on modern frontend frameworks, testing, and performance optimization techniques."
-        ]
+          ]
       },
       {
         "company": "RGR Marketing",
@@ -84,15 +57,7 @@
         "start_date": "Jan 2020",
         "end_date": "Jul 2021",
         "details": [
-          "Developed React (TypeScript) SPAs for marketing automation, creating responsive layouts and interactive workflows for internal users.",
-          "Built reusable components and forms with validation, reducing error-driven support tickets by 25%.",
-          "Collaborated with backend teams to integrate APIs supporting pagination, filtering, and cursor-based queries for large datasets.",
-          "Implemented automated unit, integration, and e2e tests with Jest, Cypress, and Supertest, improving release stability.",
-          "Optimized SPA performance using code splitting, lazy loading, and asset minification, improving Lighthouse scores by 32%.",
-          "Partnered with product and design teams to prototype features, conduct A/B testing, and refine UX.",
-          "Established CI/CD pipelines with linting, type checks, and automated tests to streamline deployments.",
-          "Mentored interns and junior developers on React, TypeScript, and frontend best practices."
-        ]
+         ]
       },
       {
         "company": "Google",
@@ -101,16 +66,7 @@
         "start_date": "Feb 2017",
         "end_date": "Dec 2019",
         "details": [
-          "Built AngularJS and React modules for policy and claims management platforms, improving interface responsiveness and usability.",
-          "Integrated backend REST APIs from Node.js and PHP/Laravel teams to provide seamless data-driven experiences.",
-          "Implemented automated frontend testing with Jasmine/Karma and Jest, reducing UI bugs and enhancing release reliability.",
-          "Built reusable UI components and libraries for enterprise applications, improving cross-team development efficiency.",
-          "Optimized frontend performance with caching, lazy loading, and asset bundling strategies.",
-          "Enforced security in frontend flows using OAuth 2.0, JWT, and CSRF/XSS mitigation.",
-          "Participated in code reviews and mentoring, improving team coding standards.",
-          "Authored frontend documentation, style guides, and coding standards for maintainability and onboarding.",
-          "Collaborated with QA and product teams to resolve UI defects and ensure consistent user experiences."
-        ]
+         ]
       },
       {
         "company": "Blue Rock Technologies",
@@ -119,15 +75,6 @@
         "start_date": "Sep 2015",
         "end_date": "Dec 2016",
         "details": [
-          "Developed AngularJS applications with modular controllers and reusable components for client-facing and internal applications.",
-          "Integrated PHP/Laravel backend APIs to provide dynamic and data-driven user interfaces.",
-          "Optimized frontend performance using template caching, minification, and asset pipelines.",
-          "Ensured cross-browser compatibility and responsive design for desktop and mobile users.",
-          "Implemented automated testing with Jasmine/Karma and participated in peer code reviews.",
-          "Built and maintained role-based access flows and secure authentication integration.",
-          "Developed dashboards and admin portals, enhancing operational efficiency for clients.",
-          "Documented UI components, design patterns, and best practices for team-wide consistency.",
-          "Collaborated with QA and product teams to refine requirements and resolve UI defects effectively."
         ]
       }
     ]

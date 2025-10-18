@@ -1,0 +1,114 @@
+{
+  "name": "Christian Carrasco",
+  "location": "Barcelona, Spain",
+  "phone": "+34 722243634",
+  "email": "christianmadrid201@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/christian-car-241b0737b/",
+  "summary": "Senior Full Stack Engineer with 8+ years of experience building scalable web applications, cloud-native solutions, and high-performance user interfaces. Expert in React, Next.js, Node.js, Nest.js, and TypeScript, with strong experience in backend architecture, API design, and microservices. Skilled in cloud deployments (AWS), DevOps, and CI/CD pipelines. Since 2023, actively integrating AI/LLM models into applications to deliver intelligent, next-generation features. Experienced across startups and enterprise environments, delivering high-quality, production-ready systems with a focus on scalability, performance, and maintainability. Recognized for problem-solving, architectural vision, mentorship, and continuous learning.",
+  "skills": {
+    "frontend_development": [
+      "React",
+      "Next.js",
+      "Angular",
+      "Vue",
+      "Nuxt.js",
+      "Astro",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "TailwindCSS",
+      "Responsive & Cross-Browser Design"
+    ],
+    "backend_development": [
+      "Node.js",
+      "Nest.js",
+      "PHP (Symfony, Laravel)",
+      "Java (Spring Boot)",
+      "Python (Flask, Django)",
+      "C#",
+      "C++",
+      "REST APIs",
+      "GraphQL",
+      "Microservices",
+      "Event-Driven Architecture"
+    ],
+    "cloud_devops": [
+      "AWS (Lambda, S3, DynamoDB, EC2, RDS, CloudWatch)",
+      "Docker",
+      "Kubernetes (basics)",
+      "GitHub Actions",
+      "GitLab CI",
+      "Jenkins",
+      "CI/CD Automation",
+      "Application Monitoring",
+      "Logging (ELK Stack, Prometheus, Grafana)"
+    ],
+    "databases_storage": [
+      "MySQL",
+      "PostgreSQL",
+      "SQL Server",
+      "MongoDB",
+      "DynamoDB",
+      "Database Optimization",
+      "Query Performance",
+      "Scalable Schemas"
+    ],
+    "software_engineering_practices": [
+      "Agile/Scrum Methodologies",
+      "Test-Driven Development (TDD)",
+      "Unit & Integration Testing (Jest, PHPUnit, PyTest)",
+      "System Design & Scalability",
+      "Performance Optimization",
+      "Secure Coding Practices",
+      "API Integration",
+      "Data Visualization"
+    ],
+    "ai_ml_integration": [
+      "OpenAI",
+      "Hugging Face",
+      "Large Language Models",
+      "AI-powered Search",
+      "Summarization",
+      "Chatbots",
+      "ML Model Integration"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Senior Full Stack Developer",
+      "company": "Class2Class",
+      "start_date": "Jun 2023",
+      "end_date": "Present",
+      "location": "Barcelona, Spain",
+      "details": [
+      ]
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "STP Group",
+      "start_date": "Nov 2022",
+      "end_date": "Apr 2023",
+      "location": "Barcelona, Spain",
+      "details": [
+      ]
+    },
+    {
+      "title": "Junior Software Engineer",
+      "company": "Corva.ai",
+      "start_date": "Jun 2018",
+      "end_date": "Oct 2022",
+      "location": "Remote",
+      "details": [
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor’s Degree in Computer Science",
+      "school": "University of Barcelona",
+      "start_year": 2014,
+      "end_year": 2018
+    }
+  ]
+}
