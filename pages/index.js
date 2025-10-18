@@ -6,6 +6,7 @@ export default function Home() {
   const [company, setCompany] = useState("");
   const [role, setRole] = useState("");
   const [jd, setJd] = useState("");
+  const [disable, setDisable] = useState(false);
 
   useEffect(() => {
     fetch("/api/resume-list")
@@ -17,11 +18,17 @@ export default function Home() {
     if (!selected) return alert("Select a resume");
     if (!jd) return alert("Enter Job Description");
 
+    //disable generate button to prevent multiple clicks
+    setDisable(true);
+
     const res = await fetch("/api/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ selected, company, role, jd })
     });
+
+    //enable generate button
+    setDisable(false);
 
     if (!res.ok) {
       const errorText = await res.text();
@@ -36,6 +43,7 @@ export default function Home() {
       a.click();
       window.URL.revokeObjectURL(url);
     }
+
   };
 
   return (
@@ -139,6 +147,7 @@ export default function Home() {
           }}
           onMouseOver={e => e.currentTarget.style.background = "#45a049"}
           onMouseOut={e => e.currentTarget.style.background = "#4CAF50"}
+          disabled={disable}
         >
           Generate PDF
         </button>

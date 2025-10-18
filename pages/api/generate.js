@@ -127,7 +127,7 @@ Return the **fully new, ATS-optimized resume JSON**, including:
 
     if (isVercel) {
       browser = await puppeteer.launch({
-        args: chromium.args,
+        args: [...chromium.args, '--no-sandbox'],
         defaultViewport: chromium.defaultViewport,
         executablePath: await chromium.executablePath(),
         headless: chromium.headless,
