@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
 import Handlebars from "handlebars";
-import { chromium } from "playwright";
+import chromium from "@sparticuz/chromium";
+import puppeteer from "puppeteer-core";
 import OpenAI from "openai";
 import { parse } from "jsonc-parser";
 
@@ -119,24 +120,18 @@ Return the **fully new, ATS-optimized resume JSON**, including:
 
     // Generate PDF
 
-    // --- Generate PDF using Playwright ---
-    const browser = await chromium.launch({
-      headless: true,
-      args: ["--no-sandbox"],
+
+    const browser = await puppeteer.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(),
+      headless: chromium.headless,
     });
-
     const page = await browser.newPage();
-    await page.setContent(html, { waitUntil: "networkidle" });
-
+    await page.setContent(html, { waitUntil: "networkidle0" });
     const pdfBuffer = await page.pdf({
       format: "A4",
       printBackground: true,
-      margin: {
-        top: "5mm",
-        bottom: "10mm",
-        left: "10mm",
-        right: "10mm"
-      }
+      margin: { top: "5mm", bottom: "10mm", left: "10mm", right: "10mm" },
     });
     await browser.close();
 

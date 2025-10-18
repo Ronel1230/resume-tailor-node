@@ -5,17 +5,17 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "start": "next start",
-        "postinstall": "npx playwright install"
+        "start": "next start -p $PORT"
     },
     "dependencies": {
+        "@sparticuz/chromium": "^141.0.0",
         "formidable": "^2.1.1",
         "handlebars": "^4.7.7",
         "jsonc-parser": "^3.3.1",
         "next": "14.1.0",
         "openai": "^5.3.0",
         "pdf-parse": "^1.1.1",
-        "playwright": "^1.56.1",
+        "puppeteer-core": "^24.25.0",
         "react": "18.2.0",
         "react-dom": "18.2.0"
     },
