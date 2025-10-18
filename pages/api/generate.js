@@ -1,13 +1,10 @@
 import fs from "fs";
 import path from "path";
 import Handlebars from "handlebars";
-import chromium from "@sparticuz/chromium";
-import puppeteer from "puppeteer-core";
+import { chromium } from "playwright";
 import OpenAI from "openai";
 import { parse } from "jsonc-parser";
 
-
-console.log("Chromium path:", await chromium.executablePath());
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -122,23 +119,15 @@ Return the **fully new, ATS-optimized resume JSON**, including:
 
     // Generate PDF
 
-    const isVercel = !!process.env.VERCEL_ENV;
-    let browser;
-
-    if (isVercel) {
-      browser = await puppeteer.launch({
-        args: [...chromium.args, '--no-sandbox'],
-        defaultViewport: chromium.defaultViewport,
-        executablePath: await chromium.executablePath(),
-        headless: chromium.headless,
-      });
-    } else {
-      const puppeteerFull = await import("puppeteer");
-      browser = await puppeteerFull.launch({ headless: true });
-    }
+    // --- Generate PDF using Playwright ---
+    const browser = await chromium.launch({
+      headless: true,
+      args: ["--no-sandbox"],
+    });
 
     const page = await browser.newPage();
-    await page.setContent(html, { waitUntil: "networkidle0" });
+    await page.setContent(html, { waitUntil: "networkidle" });
+
     const pdfBuffer = await page.pdf({
       format: "A4",
       printBackground: true,

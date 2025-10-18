@@ -15,26 +15,25 @@ export default function Home() {
   }, []);
 
   const generatePDF = async () => {
+    if (disable) return; // already running
     if (!selected) return alert("Select a resume");
     if (!jd) return alert("Enter Job Description");
 
-    //disable generate button to prevent multiple clicks
-    setDisable(true);
+    setDisable(true); // disable immediately
 
-    const res = await fetch("/api/generate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ selected, company, role, jd })
-    });
+    try {
+      const res = await fetch("/api/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ selected, company, role, jd })
+      });
 
-    //enable generate button
-    setDisable(false);
+      if (!res.ok) {
+        const errorText = await res.text();
+        console.error('Error response:', errorText);
+        return alert("Error generating PDF");
+      }
 
-    if (!res.ok) {
-      const errorText = await res.text();
-      console.error('Error response:', errorText);
-      return alert("Error generating PDF");
-    } else {
       const blob = await res.blob();
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -42,6 +41,11 @@ export default function Home() {
       a.download = `${selected}${company ? `_${company}` : ''}${role ? `_${role}` : ''}.pdf`;
       a.click();
       window.URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error('Generate PDF failed:', err);
+      alert('Error generating PDF');
+    } finally {
+      setDisable(false);
     }
 
   };
@@ -134,22 +138,27 @@ export default function Home() {
       <div style={{ textAlign: "center" }}>
         <button
           onClick={generatePDF}
+          disabled={disable}
+          onMouseEnter={e => {
+            if (!disable) e.currentTarget.style.background = "#45a049";
+          }}
+          onMouseLeave={e => {
+            if (!disable) e.currentTarget.style.background = "#4CAF50";
+          }}
           style={{
-            background: "#4CAF50",
+            background: disable ? "#9e9e9e" : "#4CAF50",
             color: "#fff",
             border: "none",
             padding: "12px 28px",
             fontSize: "16px",
             fontWeight: "bold",
             borderRadius: "8px",
-            cursor: "pointer",
-            transition: "background 0.3s"
+            cursor: disable ? "not-allowed" : "pointer",
+            transition: "background 0.15s",
+            opacity: disable ? 0.8 : 1
           }}
-          onMouseOver={e => e.currentTarget.style.background = "#45a049"}
-          onMouseOut={e => e.currentTarget.style.background = "#4CAF50"}
-          disabled={disable}
         >
-          Generate PDF
+          {disable ? 'Generating...' : 'Generate PDF'}
         </button>
       </div>
     </div>
