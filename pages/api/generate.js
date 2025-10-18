@@ -123,6 +123,7 @@ Return the **fully new, ATS-optimized resume JSON**, including:
     const browser = await chromium.launch({
       headless: true,
       args: ["--no-sandbox"],
+      executablePath: '/path/to/chromium'
     });
 
     const page = await browser.newPage();
