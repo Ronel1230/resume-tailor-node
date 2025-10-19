@@ -99,7 +99,8 @@ Job Description: ${jd}
 **Output:**  
 Return the **fully new, ATS-optimized resume JSON**, including:  
 - A brand-new professional summary  
-- A skills section with maximum JD-relevant skills  
+- A skills section with much and much skills aligned to the JD  
+- An experience section with rewritten very detailed bullets showing measurable impact
 - Full alignment with JD, measurable achievements, and optimized for ATS
 `;
 
