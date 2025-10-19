@@ -94,6 +94,7 @@ Your task is to **create a completely new resume** in JSON format that is **full
 5. **ATS Optimization:** Use exact terminology from the JD for skills, technologies, and responsibilities. Avoid listing unrelated or outdated tech unless highly relevant.  
 6. **Formatting:** Output **valid JSON only**, maintaining the same structure as the original resume. Do NOT include any extra text outside JSON.  
 7. **Key Difference:** This must result in a **fully new resume**, not just a rewritten version. Every section (summary, skills, experience) must be reconstructed to **maximize alignment with the JD** and **showcase measurable impact**.  
+8. In the summary and experience sections, **wrap all technical skills, tools, frameworks, programming languages, and cloud platforms** in <b> and </b> HTML tags (for example: <b>Python</b>, <b>TensorFlow</b>, <b>AWS</b>). Use plain text for everything else.
 
 **Input:**  
 Resume JSON: ${JSON.stringify(resumeJson)}
