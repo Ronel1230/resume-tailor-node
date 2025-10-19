@@ -14,13 +14,9 @@
       }
     ],
     "skills": {
-      "Frontend": ["React.js", "Next.js", "Angular", "Vue.js", "TypeScript", "Redux Toolkit", "RxJS", "Tailwind CSS", "Material-UI", "WCAG", "Responsive & Accessible Design", "Component Architecture"],
-      "Testing & QA": ["Jest", "Cypress", "Playwright", "Storybook", "Unit & Integration Testing", "e2e Automation"],
-      "API & Integration": ["REST", "GraphQL", "WebSockets", "collaboration with Node.js, FastAPI, .NET, Ruby and serverless backend teams"],
-      "Performance & Optimization": ["Code splitting", "lazy loading", "caching", "Core Web Vitals optimization", "bundle analysis", "SEO best practices"],
-      "AI/ML Frontend Integration": ["LLMs (OpenAI, Claude, Hugging Face)", "LangChain pipelines", "RAG", "vector DB integrations (Pinecone, FAISS)"],
-      "Cloud & DevOps": ["AWS", "Azure", "CI/CD pipelines", "CDN optimization", "Docker"],
-      "Methodologies": ["Agile (Scrum/Kanban)", "CI/CD automation", "cross-functional collaboration"]
+      "skills-group": [
+        
+      ]
     },
     "experience": [
       {
