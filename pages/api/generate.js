@@ -82,7 +82,6 @@ Your task is to **create a completely new resume** in JSON format that is **full
    - Add as many relevant, current, in-demand skills as possible to maximize ATS keyword coverage.  
    - Organize skills logically (Frontend, Backend, Cloud/DevOps, AI/ML, Databases, Software Practices, Tools & Frameworks, etc.).  
 3. **Experience Section:**  
-   - Each job must have **7–8 very long, detailed, results-driven bullets**.  
    - Bullets must show measurable outcomes, business impact, and technical leadership.  
    - Emphasize **JD keywords and required skills**: technologies, frameworks, cloud, AI/ML, automation, security, performance, scalability, mentoring, CI/CD, serverless, APIs, etc.  
    - Include **AI/ML, cloud, and automation achievements** wherever relevant.  
@@ -101,7 +100,6 @@ Job Description: ${jd}
 Return the **fully new, ATS-optimized resume JSON**, including:  
 - A brand-new professional summary  
 - A skills section with maximum JD-relevant skills  
-- Each job rewritten with **7–8 long, detailed bullets**  
 - Full alignment with JD, measurable achievements, and optimized for ATS
 `;
 
