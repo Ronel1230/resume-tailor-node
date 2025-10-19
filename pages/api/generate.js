@@ -25,6 +25,10 @@ Handlebars.registerHelper("formatKey", function (key) {
   return words.join(" ");
 });
 
+Handlebars.registerHelper("safe", function (text) {
+  return new Handlebars.SafeString(text);
+});
+
 // --- Robust JSON parse ---
 function robustJsonParse(text) {
   try {
@@ -99,8 +103,8 @@ Job Description: ${jd}
 **Output:**  
 Return the **fully new, ATS-optimized resume JSON**, including:  
 - A brand-new professional summary  
-- A skills section with much and much skills aligned to the JD  
-- An experience section with rewritten very detailed bullets showing measurable impact
+- A skills section with very much skills  
+- Each job rewritten with **3–4 long, very detailed bullets**  
 - Full alignment with JD, measurable achievements, and optimized for ATS
 `;
 
@@ -130,7 +134,7 @@ Return the **fully new, ATS-optimized resume JSON**, including:
     const pdfBuffer = await page.pdf({
       format: "A4",
       printBackground: true,
-      margin: { top: "5mm", bottom: "10mm", left: "10mm", right: "10mm" },
+      margin: { top: "10mm", bottom: "10mm", left: "10mm", right: "10mm" },
     });
     await browser.close();
 
