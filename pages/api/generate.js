@@ -84,7 +84,7 @@ Your task is to **create a completely new resume** in JSON format that is **full
 2. **Skills Section:**  
    - Include **all JD-required skills first**.  
    - Add as many relevant, current, in-demand skills as possible to maximize ATS keyword coverage.  
-   - Organize skills logically (Frontend, Backend, Cloud/DevOps, AI/ML, Databases, Software Practices, Tools & Frameworks, etc.).  
+   - Organize skills logically  
 3. **Experience Section:**  
    - Bullets must show measurable outcomes, business impact, and technical leadership.  
    - Emphasize **JD keywords and required skills**: technologies, frameworks, cloud, AI/ML, automation, security, performance, scalability, mentoring, CI/CD, serverless, APIs, etc.  
@@ -95,6 +95,7 @@ Your task is to **create a completely new resume** in JSON format that is **full
 6. **Formatting:** Output **valid JSON only**, maintaining the same structure as the original resume. Do NOT include any extra text outside JSON.  
 7. **Key Difference:** This must result in a **fully new resume**, not just a rewritten version. Every section (summary, skills, experience) must be reconstructed to **maximize alignment with the JD** and **showcase measurable impact**.  
 8. In the summary and experience sections, **wrap all technical skills, tools, frameworks, programming languages, and cloud platforms** in <b> and </b> HTML tags (for example: <b>Python</b>, <b>TensorFlow</b>, <b>AWS</b>). Use plain text for everything else.
+   example of detailed resume bullet with HTML tag: Designed and deployed end-to-end machine learning pipelines using <b>Python</b>, <b>TensorFlow</b>, and <b>MLflow</b> to automate model training, evaluation, and deployment, improving inference speed by 40% and reducing manual intervention through <b>Docker</b>-based MLOps workflows.
 
 **Input:**  
 Resume JSON: ${JSON.stringify(resumeJson)}
