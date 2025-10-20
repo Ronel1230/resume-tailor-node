@@ -203,13 +203,13 @@
     {{#each experience}}
     <div class="exp-item">
       <div class="exp-header">
-        <h4>{{{title}}}</h4>
+        <h4>{{title}}</h4>
         <span>{{start_date}} – {{end_date}}</span>
       </div>
       <div class="exp-company">{{company}}  {{location}}</div>
       <ul class="exp-details">
         {{#each details}}
-        <li>{{this}}</li>
+        <li>{{{this}}}</li>
         {{/each}}
       </ul>
     </div>
