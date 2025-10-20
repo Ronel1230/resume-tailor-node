@@ -3,6 +3,7 @@ import path from "path";
 import Handlebars from "handlebars";
 import chromium from "@sparticuz/chromium";
 import puppeteer from "puppeteer-core";
+//import puppeteer from 'puppeteer';
 import OpenAI from "openai";
 import { parse } from "jsonc-parser";
 
@@ -84,8 +85,9 @@ Your task is to **create a completely new resume** in JSON format that is **full
 2. **Skills Section:**  
    - Include **all JD-required skills first**.  
    - Add as many relevant, current, in-demand skills as possible to maximize ATS keyword coverage.  
-   - Organize skills logically  
+   - Organize skills logically (Frontend, Backend, Cloud/DevOps, AI/ML, Databases, Software Practices, Tools & Frameworks, etc.).  
 3. **Experience Section:**  
+   - Each job must have **7–8 very long, detailed, results-driven bullets**.  
    - Bullets must show measurable outcomes, business impact, and technical leadership.  
    - Emphasize **JD keywords and required skills**: technologies, frameworks, cloud, AI/ML, automation, security, performance, scalability, mentoring, CI/CD, serverless, APIs, etc.  
    - Include **AI/ML, cloud, and automation achievements** wherever relevant.  
@@ -94,8 +96,10 @@ Your task is to **create a completely new resume** in JSON format that is **full
 5. **ATS Optimization:** Use exact terminology from the JD for skills, technologies, and responsibilities. Avoid listing unrelated or outdated tech unless highly relevant.  
 6. **Formatting:** Output **valid JSON only**, maintaining the same structure as the original resume. Do NOT include any extra text outside JSON.  
 7. **Key Difference:** This must result in a **fully new resume**, not just a rewritten version. Every section (summary, skills, experience) must be reconstructed to **maximize alignment with the JD** and **showcase measurable impact**.  
-8. In the summary and experience sections, **wrap all technical skills, tools, frameworks, programming languages, and cloud platforms** in <b> and </b> HTML tags (for example: <b>Python</b>, <b>TensorFlow</b>, <b>AWS</b>). Use plain text for everything else.
-   example of detailed resume bullet with HTML tag: Designed and deployed end-to-end machine learning pipelines using <b>Python</b>, <b>TensorFlow</b>, and <b>MLflow</b> to automate model training, evaluation, and deployment, improving inference speed by 40% and reducing manual intervention through <b>Docker</b>-based MLOps workflows.
+8. In the summary and experience sections(except skills section), **wrap all technical skills, tools, frameworks, programming languages, and cloud platforms** in <b> and </b> HTML tags 
+(for example: <b>Python</b>, <b>TensorFlow</b>, <b>AWS</b>). Use plain text for everything else.
+
+Here is the information you need:
 
 **Input:**  
 Resume JSON: ${JSON.stringify(resumeJson)}
@@ -106,7 +110,8 @@ Job Description: ${jd}
 Return the **fully new, ATS-optimized resume JSON**, including:  
 - A brand-new professional summary  
 - A skills section with very much skills  
-- Each job rewritten with **3–4 long, very detailed bullets**  
+- Each job rewritten with **7–8 long, very long detailed bullets**
+eg:   Designed and deployed end-to-end machine learning pipelines using <b>Python</b>, <b>TensorFlow</b>, and <b>MLflow</b> to automate model training, evaluation, and deployment, improving inference speed by 40% and reducing manual intervention through <b>Docker</b>-based MLOps workflows.
 - Full alignment with JD, measurable achievements, and optimized for ATS
 `;
 
@@ -131,6 +136,7 @@ Return the **fully new, ATS-optimized resume JSON**, including:
       executablePath: await chromium.executablePath(),
       headless: chromium.headless,
     });
+    //const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: "networkidle0" });
     const pdfBuffer = await page.pdf({
