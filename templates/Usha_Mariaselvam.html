@@ -76,7 +76,7 @@
   {{#if summary}}
   <div class="section">
     <h2>Summary</h2>
-    <p>{{summary}}</p>
+    <p>{{{summary}}}</p>
   </div>
   {{/if}}
 
@@ -88,7 +88,7 @@
       <strong>{{title}}</strong>, {{company}} <span>({{date}})</span>
       <ul>
         {{#each highlights}}
-        <li>{{this}}</li>
+        <li>{{{this}}}</li>
         {{/each}}
       </ul>
     </div>
