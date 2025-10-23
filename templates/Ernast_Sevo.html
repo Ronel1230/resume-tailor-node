@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{name}} — Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root {
+    --text: #1c1c1c;
+    --muted: #6f6f6f;
+    --accent: #111;
+    --bg: #ffffff;
+    --line: #e0e0e0;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 40px 60px;
+    line-height: 1.6;
+  }
+
+  header {
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  header h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--muted);
+    letter-spacing: 1.2px;
+    margin-top: 6px;
+  }
+
+  .contact {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  .contact a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .contact a:hover { text-decoration: underline; }
+
+  section {
+    margin-bottom: 28px;
+  }
+
+  section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent);
+    border-left: 3px solid var(--accent);
+    padding-left: 10px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  .summary {
+    font-size: 13.5px;
+    color: var(--muted);
+    background: #fafafa;
+    padding: 14px 18px;
+    border-radius: 6px;
+  }
+
+  .skills-group {
+    margin-bottom: 10px;
+  }
+  .skills-group strong {
+    font-size: 13px;
+    color: var(--accent);
+  }
+  .skills-list {
+    font-size: 13px;
+    color: var(--muted);
+    margin-left: 6px;
+  }
+
+  .experience-item {
+    margin-bottom: 20px;
+  }
+  .exp-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .job-title {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 14px;
+  }
+  .company {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .date-range {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .bullets {
+    margin-top: 6px;
+    padding-left: 18px;
+    font-size: 13px;
+  }
+  .bullets li {
+    margin-bottom: 6px;
+  }
+
+  .edu-item {
+    margin-bottom: 10px;
+  }
+  .edu-degree {
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .edu-school {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  footer {
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 40px;
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>{{name}}</h1>
+    <h2>{{title}}</h2>
+    <div class="contact">
+      {{location}} ● {{email}} ● {{phone}}
+      {{#if linkedin}} ● <a href="{{linkedin}}">LinkedIn</a>{{/if}}
+      {{#if website}} ● <a href="{{website}}">Website</a>{{/if}}
+    </div>
+  </header>
+
+  {{#if summary}}
+  <section>
+    <h3>Profile Summary</h3>
+    <div class="summary">{{summary}}</div>
+  </section>
+  {{/if}}
+
+  {{#if experience}}
+  <section>
+    <h3>Professional Experience</h3>
+    {{#each experience}}
+    <div class="experience-item">
+      <div class="exp-top">
+        <div>
+          <div class="job-title">{{title}}</div>
+          <div class="company">{{company}}{{#if location}}, {{location}}{{/if}}</div>
+        </div>
+        <div class="date-range">{{start_date}} – {{end_date}}</div>
+      </div>
+      <ul class="bullets">
+        {{#each details}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    {{/each}}
+  </section>
+  {{/if}}
+
+  {{#if education}}
+  <section>
+    <h3>Education</h3>
+    {{#each education}}
+      <div class="edu-item">
+        <div class="edu-degree">{{degree}}</div>
+        <div class="edu-school">{{school}} | {{start_year}} - {{end_year}}</div>
+      </div>
+    {{/each}}
+  </section>
+  {{/if}}
+
+  {{#if skills}}
+  <section>
+    <h3>Technical Skills</h3>
+    {{#each skills}}
+    <div class="skills-group">
+      <strong>{{@key}}</strong>:
+      <span class="skills-list">{{join this ", "}}</span>
+    </div>
+    {{/each}}
+  </section>
+  {{/if}}
+</body>
+</html>

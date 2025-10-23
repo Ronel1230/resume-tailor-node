@@ -1,0 +1,82 @@
+{
+  "name": "Jayesh Shelar",
+  "title": "Senior AI/ML Engineer",
+  "location": "Philadelphia, PA, US",
+  "phone": "(830) 888-9653",
+  "email": "jayesh.shelar29@outlook.com",
+  "summary": "Innovative and results-driven Senior AI/ML Engineer & Data Scientist with 12+ years of experience architecting, deploying, and optimizing intelligent data systems across healthcare, finance, and enterprise domains. Expert in building machine-learning models, scalable MLOps pipelines, and cloud-native analytics using Python, TensorFlow, PyTorch, and modern data-engineering stacks. Proven ability to translate complex data into actionable insights and production-grade models that drive automation, prediction accuracy, and business ROI.",
+  "experience": [
+    {
+      "company": "CitiusTech",
+      "title": "Senior AI/ML Engineer",
+      "start_date": "Feb 2022",
+      "end_date": "Sep 2025",
+      "details": [
+        "Architected and implemented AI pipelines for healthcare analytics, integrating multimodal data exceeding 25 TB.",
+        "Designed deep-learning architectures for radiology image classification, boosting accuracy to 91%.",
+        "Developed clinical NLP systems using BERT and spaCy, improving retrieval efficiency by 40%.",
+        "Built automated MLOps pipelines with Kubeflow and MLflow, reducing deployment cycles from 3 weeks to 3 days.",
+        "Applied SHAP & LIME for explainability dashboards, ensuring compliance with HIPAA/GDPR.",
+        "Containerized inference services via FastAPI + Docker deployed on AWS SageMaker with sub-250 ms latency.",
+        "Led collaboration with data engineers and clinicians for feature governance and reproducibility.",
+        "Mentored a 6-member team in deep learning best practices and automated evaluation."
+      ]
+    },
+    {
+      "company": "GS Lab",
+      "title": "Machine Learning Engineer / Data Scientist",
+      "start_date": "Aug 2019",
+      "end_date": "Jan 2022",
+      "details": [
+        "Developed real-time anomaly detection using PySpark Streaming + Kafka processing 2M events/minute.",
+        "Implemented predictive models for churn forecasting with AUC > 0.93.",
+        "Built BERT-based pipelines for automated response generation, reducing resolution time by 35%.",
+        "Automated preprocessing with Airflow DAGs and Snowflake.",
+        "Orchestrated retraining via CI/CD with Jenkins and Docker.",
+        "Created Streamlit dashboards for explainability and transparency.",
+        "Standardized Terraform scripts for multi-environment model rollouts."
+      ]
+    },
+    {
+      "company": "Aress Software",
+      "title": "Data Scientist / AI Engineer",
+      "start_date": "Jul 2017",
+      "end_date": "Aug 2019",
+      "details": [
+        "Designed recommendation engines improving engagement for SaaS clients.",
+        "Implemented NLP pipelines for text analysis and classification, reducing manual workload by 60%.",
+        "Built Flask microservices handling sub-200 ms inference latency.",
+        "Migrated workloads to AWS, reducing cost by 28%.",
+        "Created visualization dashboards using Plotly and Power BI.",
+        "Researched transfer learning achieving 40% cost reduction for inference."
+      ]
+    },
+    {
+      "company": "Nashik",
+      "title": "Data Analyst & Software Developer",
+      "start_date": "Feb 2012",
+      "end_date": "Jun 2017",
+      "details": [
+        "Delivered analytics and automation for manufacturing and retail businesses.",
+        "Built predictive maintenance models reducing downtime by 15%.",
+        "Developed ETL pipelines consolidating multi-source data into PostgreSQL.",
+        "Created dashboards in Tableau and Power BI for optimization.",
+        "Built scraping utilities using BeautifulSoup + AWS Lambda.",
+        "Developed Flask-based analytics web apps and mentored analysts."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Information Technology",
+      "school": "North Maharashtra University",
+      "end_year": "2015"
+    }
+  ],
+  "skills": [
+    "Python", "R", "C++", "Java", "SQL", "TensorFlow", "PyTorch", "Keras", "Hugging Face", 
+    "XGBoost", "LightGBM", "CatBoost", "MLflow", "Kubeflow", "Airflow", "Docker", "Kubernetes", 
+    "AWS SageMaker", "GCP Vertex AI", "Databricks", "Spark", "Kafka", "Snowflake", 
+    "Power BI", "Tableau", "Git", "Terraform", "Feature Stores", "Explainable AI (SHAP, LIME)"
+  ]
+}

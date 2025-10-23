@@ -1,0 +1,84 @@
+{
+  "name": "Ernast Sevo",
+  "title": "Senior AI/ML Engineer & Data Scientist",
+  "location": "Pittsburgh, PA",
+  "email": "ernast.sevo17@outlook.com",
+  "phone": "+1 (830) 542-2713",
+  "linkedin": "",
+  "website": "",
+  "summary": "Innovative and research-driven AI/ML Engineer and Data Scientist with over 13 years of experience designing, developing, and deploying intelligent data-driven solutions across healthcare, automotive, and autonomous systems. Proficient in building end-to-end machine learning pipelines—from data acquisition and feature engineering to model training, evaluation, and production deployment. Deep expertise in Python, TensorFlow, PyTorch, scikit-learn, and modern MLOps ecosystems (Kubernetes, MLflow, Docker, AWS Sagemaker). Adept at applying deep learning, computer vision, NLP, and predictive modeling to solve complex real-world problems. Recognized for blending research-grade models with scalable production systems that drive measurable business outcomes.",
+  "education": [
+    {
+      "degree": "BS in Computer Science, BA in Film Studies",
+      "school": "University of Pittsburgh",
+      "start_year": "2009",
+      "end_year": "2012"
+    },
+    {
+      "degree": "BS in Computer Science with Applied Mathematics",
+      "school": "University at Albany",
+      "start_year": "2007",
+      "end_year": "2009"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Motional",
+      "title": "Senior AI/ML Engineer",
+      "location": "",
+      "start_date": "Sep 2022",
+      "end_date": "Sep 2025",
+      "details": [
+        "Led end-to-end development of deep learning and sensor fusion models for autonomous driving systems using PyTorch, TensorFlow, and OpenCV.",
+        "Architected scalable inference pipelines with Kubernetes, Docker, and MLflow, ensuring reproducible model deployment.",
+        "Designed real-time perception and trajectory prediction models using CNNs, LSTMs, and Transformers, improving accuracy by 15%.",
+        "Applied Bayesian optimization (Optuna, Ray Tune) to enhance training efficiency.",
+        "Integrated active learning pipelines that improved annotation efficiency by 30%.",
+        "Developed MLOps platforms with SageMaker and Kubeflow for automated retraining.",
+        "Co-authored internal research papers on explainable AI and safety metrics.",
+        "Mentored junior engineers in model optimization and best practices."
+      ]
+    },
+    {
+      "company": "ZOLL Medical Corporation",
+      "title": "AI/ML Engineer → Senior Data Scientist",
+      "location": "",
+      "start_date": "Sep 2012",
+      "end_date": "Jul 2022",
+      "details": [
+        "Integrated AI and predictive analytics into life-saving medical devices to improve cardiac event detection.",
+        "Developed forecasting and signal-processing models using Python, TensorFlow, and PyTorch.",
+        "Built ETL pipelines for terabytes of healthcare data using Spark, Hadoop, and Airflow.",
+        "Implemented anomaly detection algorithms (Autoencoders, Isolation Forests) improving alert precision by 22%.",
+        "Collaborated with biomedical researchers on predictive patient readmission models.",
+        "Deployed ML APIs with Flask and FastAPI for real-time device analytics.",
+        "Introduced LIME and SHAP for model explainability under FDA compliance.",
+        "Led AI transformation initiatives and trained internal data science teams."
+      ]
+    },
+    {
+      "company": "ZOLL Medical Corporation",
+      "title": "AI/ML Intern",
+      "location": "",
+      "start_date": "Jan 2012",
+      "end_date": "Sep 2012",
+      "details": [
+        "Developed early ECG analysis engines with MATLAB and Python.",
+        "Created feature extraction and preprocessing scripts improving dataset readiness by 40%.",
+        "Implemented classifiers (Logistic Regression, SVMs) achieving 85% accuracy.",
+        "Documented experiments for regulatory compliance and presented results to teams."
+      ]
+    }
+  ],
+  "skills": {
+    "Programming Languages": ["Python", "R", "C++", "Java", "SQL", "Bash"],
+    "Machine Learning & Deep Learning": ["TensorFlow", "PyTorch", "Keras", "scikit-learn", "XGBoost", "LightGBM", "CatBoost", "Hugging Face Transformers"],
+    "AI Domains": ["Computer Vision (CNNs, YOLO, OpenCV)", "Natural Language Processing (BERT, GPT, spaCy, NLTK)", "Time-Series Forecasting", "Predictive Analytics", "Recommender Systems", "Explainable AI"],
+    "MLOps & Deployment": ["MLflow", "Kubeflow", "Airflow", "Docker", "Kubernetes", "AWS SageMaker", "GCP Vertex AI", "FastAPI", "Flask"],
+    "Data Engineering & Big Data": ["Pandas", "NumPy", "Spark", "Hadoop", "Kafka", "Databricks", "Snowflake", "Airbyte"],
+    "Cloud & Infrastructure": ["AWS", "GCP", "Azure ML"],
+    "Databases & Storage": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "ElasticSearch"],
+    "Visualization & BI Tools": ["Matplotlib", "Seaborn", "Plotly", "Power BI", "Tableau", "Streamlit"],
+    "DevOps & Version Control": ["Git", "Jenkins", "Terraform", "Linux"]
+  }
+}

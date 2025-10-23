@@ -1,0 +1,86 @@
+{
+  "name": "Usha Mariaselvam",
+  "title": "Senior AI/ML Engineer",
+  "contact": {
+    "location": "Philadelphia, PA, US",
+    "phone": "(430) 964-0546",
+    "email": "usha.mariaselvam.101@outlook.com",
+    "linkedin": "",
+    "website": ""
+  },
+  "summary": "Seasoned and results-oriented AI/ML Engineer and Senior Data Scientist with more than 15 years of experience building, training, and deploying intelligent systems in finance, enterprise software, and data analytics environments. Expert in deep learning, NLP, time-series modeling, and predictive analytics, with a proven record of transforming raw data into real-time, production-grade AI solutions. Adept at designing scalable pipelines, developing MLOps workflows, and optimizing models for accuracy and efficiency.",
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "school": "West Chester University of Pennsylvania",
+      "graduated": "2007"
+    },
+    {
+      "degree": "Bachelor of Technology in Information Technology",
+      "school": "Anna University Chennai",
+      "graduated": "2005"
+    }
+  ],
+  "skills": {
+    "Programming Languages": ["Python", "R", "SQL", "C++", "Java", "Scala", "MATLAB", "Bash"],
+    "Machine Learning & Deep Learning": ["TensorFlow", "PyTorch", "Keras", "scikit-learn", "XGBoost", "LightGBM", "CatBoost", "fastai", "Hugging Face Transformers"],
+    "AI Domains": ["NLP", "Computer Vision", "Predictive Analytics", "Recommender Systems", "Time-Series Forecasting", "Anomaly Detection", "Reinforcement Learning", "Generative AI", "Explainable AI"],
+    "MLOps & Deployment": ["MLflow", "Kubeflow", "TFX", "Docker", "Kubernetes", "SageMaker", "Vertex AI", "Azure ML", "Airflow", "FastAPI", "Flask", "BentoML", "CI/CD", "GitOps"],
+    "Data Engineering & Big Data": ["Spark", "Hadoop", "Hive", "Kafka", "Flink", "Databricks", "Snowflake", "Airbyte", "Delta Lake"],
+    "Data Science & Statistics": ["NumPy", "Pandas", "SciPy", "Statsmodels", "Bayesian Inference", "A/B Testing", "Feature Engineering"],
+    "Cloud & Infrastructure": ["AWS", "GCP", "Azure", "Terraform", "Jenkins", "Linux"],
+    "Databases & Storage": ["PostgreSQL", "MySQL", "MongoDB", "Cassandra", "Redis", "ElasticSearch", "Neo4j", "DynamoDB"],
+    "Visualization & BI": ["Matplotlib", "Seaborn", "Plotly", "Dash", "Streamlit", "Power BI", "Tableau", "Looker"]
+  },
+  "experience": [
+    {
+      "title": "Lead AI/ML Engineer & Senior Data Scientist",
+      "company": "Vanguard",
+      "date": "Jan 2018 - Present",
+      "highlights": [
+        "Architected and led enterprise-scale AI/ML systems for predictive analytics and portfolio optimization.",
+        "Developed BERT and GPT models for financial NLP tasks, cutting analysis time by 75%.",
+        "Built scalable ML pipelines using Airflow, MLflow, and Kubernetes.",
+        "Integrated reinforcement learning and Bayesian optimization into trading simulators.",
+        "Implemented Explainable AI (SHAP, LIME) for transparency and compliance.",
+        "Led hybrid cloud MLOps platform on AWS SageMaker and GCP Vertex AI.",
+        "Established model monitoring with DVC and Prometheus.",
+        "Mentored data science teams and published internal AI research papers."
+      ]
+    },
+    {
+      "title": "Data Scientist / Machine Learning Engineer",
+      "company": "Liquidhug Inc.",
+      "date": "Jan 2013 – Dec 2017",
+      "highlights": [
+        "Designed predictive frameworks for healthcare, telecom, and finance clients.",
+        "Migrated analytics from R/SAS to Python + Spark ecosystem.",
+        "Built ensemble models for behavior modeling and fraud detection.",
+        "Deployed real-time detection with Spark Streaming and TensorFlow.",
+        "Created automated A/B testing frameworks for model evaluation.",
+        "Developed dashboards integrating live model APIs."
+      ]
+    },
+    {
+      "title": "Machine Learning Engineer / Data Analyst",
+      "company": "Oracle America, Inc.",
+      "date": "Aug 2008 – Nov 2012",
+      "highlights": [
+        "Developed data mining models for ERP/CRM optimization.",
+        "Created recommendation prototypes and migrated to Hadoop.",
+        "Integrated early ML frameworks like TensorFlow 0.x.",
+        "Automated performance monitoring via PL/SQL."
+      ]
+    },
+    {
+      "title": "Data Science Intern",
+      "company": "AdminServer",
+      "date": "Feb 2008 - Aug 2008",
+      "highlights": [
+        "Built early ML prototypes for insurance risk modeling.",
+        "Performed EDA and feature extraction in Python and R.",
+        "Helped automate actuarial workflows and documentation."
+      ]
+    }
+  ]
+}
