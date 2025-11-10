@@ -139,7 +139,7 @@
 {{#if summary}}
 <div class="section summary">
   <h2>Summary</h2>
-  <p>{{summary}}</p>
+  <p>{{{summary}}}</p>
 </div>
 {{/if}}
 
@@ -164,7 +164,7 @@
       <div class="company-dates">{{company}} | {{start_date}} - {{end_date}}</div>
       <ul class="job-detail">
         {{#each details}}
-          <li>{{this}}</li>
+          <li>{{{this}}}</li>
         {{/each}}
       </ul>
     </div>
