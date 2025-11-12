@@ -50,16 +50,16 @@
     ],
     "education": [
       {
+        "degree": "Bachelor’s Degree in Engineering",
+        "school": "University of Memphis",
+        "start_year": "2009",
+        "end_year": "2011"
+      },
+      {
         "degree": "Certificate in Full-Stack Web Development",
         "school": "UCF Boot Camps",
         "start_year": "2024",
-        "end_year": "2024"
-      },
-      {
-        "degree": "Bachelor’s Degree in Engineering",
-        "school": "University of Memphis",
-        "start_year": "2010",
-        "end_year": "2010"
+        "end_year": "-"
       }
     ]
   }
