@@ -1,0 +1,64 @@
+{
+  "name": "Miguel Mateo Hernández",
+  "title": "Senior Software Engineer",
+  "email": "miguel.mateoh@outlook.com",
+  "phone": "+52 221 516 3002",
+  "location": "Puebla, Puebla, Mexico",
+  "linkedin": "https://www.linkedin.com/in/miguel-mateo-hernández-0a478a398",
+  "website": "",
+  "summary": "Senior Software Engineer with over 10 years of experience in full-stack development, specializing in C#, .NET, React, and cloud-based applications. Proven ability to lead technical teams, mentor engineers, and deliver scalable, high-performance software solutions. Strong expertise in Azure, SQL Server, and microservices architecture, with hands-on experience in optimizing CI/CD pipelines, DevOps workflows, and cloud deployments. Passionate about building robust, maintainable systems and driving innovation through clean architecture and agile practices.",
+  "skills": {
+    "Frontend": ["React", "Vue.js", "HTML5", "CSS3", "TypeScript", "XAML", "Responsive Design"],
+    "Backend": ["Node.js", "Web APIs", "Entity Framework", "Microservices Architecture"],
+    "Databases": ["SQL Server", "PostgreSQL", "MySQL", "MongoDB", "DynamoDB"],
+    "Cloud & DevOps": ["Azure", "Docker", "Azure DevOps", "CI/CD", "Kubernetes"],
+    "Testing & Quality": ["Jest", "Mocha", "Selenium", "Cypress", "Unit Testing", "Integration Testing"],
+    "Collaboration & Leadership": ["Agile", "Scrum", "Kanban", "Git", "Jira", "Mentorship", "Team Leadership"]
+  },
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Atlassian",
+      "location": "",
+      "start_date": "Jun 2021",
+      "end_date": "Present",
+      "details": [
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Walmart",
+      "location": "",
+      "start_date": "Jan 2018",
+      "end_date": "Jun 2021",
+      "details": [
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Konfío",
+      "location": "",
+      "start_date": "Jul 2016",
+      "end_date": "Oct 2017",
+      "details": [
+      ]
+    },
+    {
+      "title": "Junior Software Engineer",
+      "company": "Kinedu",
+      "location": "",
+      "start_date": "Sep 2014",
+      "end_date": "Jun 2016",
+      "details": [
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor’s in Computer Science",
+      "school": "Universidad Nacional Autónoma de México (UNAM)",
+      "start_year": "2010",
+      "end_year": "2014"
+    }
+  ]
+}

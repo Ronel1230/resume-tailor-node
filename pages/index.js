@@ -60,25 +60,44 @@ export default function Home() {
       borderRadius: "12px",
       boxShadow: "0 4px 12px rgba(0,0,0,0.1)"
     }}>
-      <h1 style={{ textAlign: "center", color: "#333" }}>Resume Tailor & PDF Generator</h1>
+      <h1 style={{ textAlign: "center", color: "#333", marginBottom: 6 }}>Resume Tailor & PDF Generator</h1>
+      {selected && (
+        <div style={{ textAlign: "center", color: "#4CAF50", fontWeight: 600, marginBottom: 10 }}>
+          Selected: {selected}
+        </div>
+      )}
 
       <div style={{ margin: "20px 0" }}>
-        <label style={{ fontWeight: "bold" }}>Select Resume:</label>
-        <select
-          value={selected}
-          onChange={e => setSelected(e.target.value)}
-          style={{
-            marginLeft: 10,
-            padding: "6px 10px",
-            borderRadius: "6px",
-            border: "1px solid #ccc",
-            width: "calc(100% - 20px)",
-            marginTop: "6px"
-          }}
-        >
-          <option value="">--Select--</option>
-          {resumes.map(r => <option key={r} value={r}>{r}</option>)}
-        </select>
+        <label style={{ fontWeight: "bold", display: "block", marginBottom: 8 }}>Choose a Resume:</label>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
+          {resumes && resumes.length > 0 ? (
+            resumes.map(r => (
+              <button
+                key={r}
+                type="button"
+                onClick={() => setSelected(r)}
+                aria-pressed={selected === r}
+                style={{
+                  padding: "10px 14px",
+                  borderRadius: 10,
+                  border: selected === r ? "2px solid #4CAF50" : "1px solid #ddd",
+                  background: selected === r ? "#E8F5E9" : "#fff",
+                  color: "#333",
+                  cursor: "pointer",
+                  fontWeight: 600,
+                  boxShadow: selected === r ? "0 2px 8px rgba(76,175,80,0.25)" : "0 1px 4px rgba(0,0,0,0.06)",
+                  transition: "all 0.15s",
+                }}
+                onMouseEnter={e => (e.currentTarget.style.boxShadow = "0 3px 10px rgba(0,0,0,0.12)")}
+                onMouseLeave={e => (e.currentTarget.style.boxShadow = selected === r ? "0 2px 8px rgba(76,175,80,0.25)" : "0 1px 4px rgba(0,0,0,0.06)")}
+              >
+                {r}
+              </button>
+            ))
+          ) : (
+            <div style={{ color: "#777" }}>No resumes found.</div>
+          )}
+        </div>
       </div>
 
       <div style={{ margin: "20px 0" }}>
