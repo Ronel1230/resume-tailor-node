@@ -41,7 +41,7 @@ function robustJsonParse(text) {
 }
 
 // --- Call OpenAI with timeout & retries ---
-async function callOpenAI(prompt, retries = 2, timeoutMs = 30000) {
+async function callOpenAI(prompt, retries = 2, timeoutMs = 60000) {
   while (retries > 0) {
     try {
       return await Promise.race([
